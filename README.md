@@ -6,7 +6,7 @@ A static analytics dashboard for **No Strings Attached** (BH 24 Salt Lake City S
 
 | File | Purpose |
 |---|---|
-| `dashboard.html` | Single-file dashboard — all charts, tables, and styling |
+| `index.html` | Single-file dashboard — all charts, tables, and styling |
 | `process_data.py` | Reads Excel exports and generates `dashboard_data.json` |
 | `dashboard_data.json` | Generated data file loaded by the dashboard |
 
@@ -75,7 +75,7 @@ The live dashboard updates automatically within a minute.
 
 ## Notes
 
-- The dashboard must be served over HTTP (`python3 -m http.server`) — opening `dashboard.html` directly as a file won't work due to `fetch()`.
+- The dashboard must be served over HTTP (`python3 -m http.server`) — opening `index.html` directly as a file won't work due to `fetch()`.
 - `Order_Listing_*.xlsx` and `Item_Wise_Sales_Report_*.xlsx` are excluded from git (business data). Only `dashboard_data.json` is committed.
 - If you accumulate multiple monthly order listing files, `process_data.py` merges them automatically and deduplicates orders.
 - Item counts in the Top Selling Items table reflect **order appearances**, not units sold. Use the Item Wise Sales charts for actual unit counts.
