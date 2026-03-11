@@ -1,0 +1,3460 @@
+{
+  "restaurant": "No Strings Attached",
+  "address": "BH 24 Salt Lake City Sector 2",
+  "period": "May 2025 \u2013 Feb 2026",
+  "generated": "07 Mar 2026 17:19",
+  "months": [
+    "May 2025",
+    "Jun 2025",
+    "Jul 2025",
+    "Aug 2025",
+    "Sep 2025",
+    "Oct 2025",
+    "Nov 2025",
+    "Dec 2025",
+    "Jan 2026",
+    "Feb 2026"
+  ],
+  "monthly_revenue": [
+    {
+      "month": "May 2025",
+      "revenue": 600720.0,
+      "orders": 648
+    },
+    {
+      "month": "Jun 2025",
+      "revenue": 628702.0,
+      "orders": 681
+    },
+    {
+      "month": "Jul 2025",
+      "revenue": 679978.0,
+      "orders": 751
+    },
+    {
+      "month": "Aug 2025",
+      "revenue": 651184.0,
+      "orders": 774
+    },
+    {
+      "month": "Sep 2025",
+      "revenue": 834821.0,
+      "orders": 843
+    },
+    {
+      "month": "Oct 2025",
+      "revenue": 859800.0,
+      "orders": 781
+    },
+    {
+      "month": "Nov 2025",
+      "revenue": 535972.0,
+      "orders": 642
+    },
+    {
+      "month": "Dec 2025",
+      "revenue": 750086.0,
+      "orders": 802
+    },
+    {
+      "month": "Jan 2026",
+      "revenue": 787599.0,
+      "orders": 851
+    },
+    {
+      "month": "Feb 2026",
+      "revenue": 670978.0,
+      "orders": 667
+    }
+  ],
+  "dow_distributions": {
+    "Monday": {
+      "stats": {
+        "min": 3697.0,
+        "q1": 11131.5,
+        "median": 13764.5,
+        "q3": 16753.5,
+        "max": 83246.0,
+        "mean": 15530.6,
+        "n": 42,
+        "whisker_lower": 3697.0,
+        "whisker_upper": 20534.0,
+        "outliers": [
+          26608.0,
+          29366.0,
+          83246.0
+        ]
+      },
+      "values": [
+        3697.0,
+        4528.0,
+        5821.0,
+        7681.0,
+        8137.0,
+        9378.0,
+        9953.0,
+        10263.0,
+        10486.0,
+        10918.0,
+        11052.0,
+        11370.0,
+        11688.0,
+        12011.0,
+        12054.0,
+        12333.0,
+        12410.0,
+        12680.0,
+        12834.0,
+        13442.0,
+        13750.0,
+        13779.0,
+        14091.0,
+        14618.0,
+        14829.0,
+        15290.0,
+        15825.0,
+        16086.0,
+        16262.0,
+        16308.0,
+        16743.0,
+        16757.0,
+        16805.0,
+        16910.0,
+        16919.0,
+        17877.0,
+        17937.0,
+        19009.0,
+        20534.0,
+        26608.0,
+        29366.0,
+        83246.0
+      ]
+    },
+    "Tuesday": {
+      "stats": {
+        "min": 2980.0,
+        "q1": 13038.0,
+        "median": 15548.0,
+        "q3": 19144.5,
+        "max": 88645.0,
+        "mean": 17940.37,
+        "n": 43,
+        "whisker_lower": 8119.0,
+        "whisker_upper": 25994.0,
+        "outliers": [
+          2980.0,
+          43433.0,
+          88645.0
+        ]
+      },
+      "values": [
+        2980.0,
+        8119.0,
+        8799.0,
+        9226.0,
+        10005.0,
+        10339.0,
+        10345.0,
+        10539.0,
+        10981.0,
+        11820.0,
+        12958.0,
+        13118.0,
+        13191.0,
+        13501.0,
+        13878.0,
+        14086.0,
+        14224.0,
+        14322.0,
+        14342.0,
+        14625.0,
+        15298.0,
+        15548.0,
+        16719.0,
+        17002.0,
+        17010.0,
+        17095.0,
+        17266.0,
+        17472.0,
+        18083.0,
+        18249.0,
+        18530.0,
+        19094.0,
+        19195.0,
+        19803.0,
+        20013.0,
+        20892.0,
+        21456.0,
+        23260.0,
+        24760.0,
+        25221.0,
+        25994.0,
+        43433.0,
+        88645.0
+      ]
+    },
+    "Wednesday": {
+      "stats": {
+        "min": 8880.0,
+        "q1": 15171.0,
+        "median": 17964.0,
+        "q3": 21610.5,
+        "max": 115832.0,
+        "mean": 21574.02,
+        "n": 43,
+        "whisker_lower": 8880.0,
+        "whisker_upper": 25951.0,
+        "outliers": [
+          34070.0,
+          34689.0,
+          41716.0,
+          43690.0,
+          115832.0
+        ]
+      },
+      "values": [
+        8880.0,
+        9589.0,
+        9750.0,
+        10383.0,
+        11819.0,
+        12511.0,
+        13863.0,
+        14265.0,
+        14841.0,
+        14870.0,
+        15071.0,
+        15271.0,
+        15322.0,
+        16108.0,
+        16188.0,
+        16247.0,
+        16449.0,
+        16991.0,
+        17289.0,
+        17306.0,
+        17322.0,
+        17964.0,
+        17967.0,
+        18177.0,
+        18247.0,
+        18450.0,
+        18717.0,
+        18879.0,
+        19181.0,
+        21007.0,
+        21367.0,
+        21397.0,
+        21824.0,
+        22011.0,
+        25156.0,
+        25180.0,
+        25876.0,
+        25951.0,
+        34070.0,
+        34689.0,
+        41716.0,
+        43690.0,
+        115832.0
+      ]
+    },
+    "Thursday": {
+      "stats": {
+        "min": 6916.0,
+        "q1": 14297.75,
+        "median": 17585.5,
+        "q3": 23005.5,
+        "max": 75354.0,
+        "mean": 22205.91,
+        "n": 44,
+        "whisker_lower": 6916.0,
+        "whisker_upper": 35085.0,
+        "outliers": [
+          36272.0,
+          39978.0,
+          72423.0,
+          72430.0,
+          75354.0
+        ]
+      },
+      "values": [
+        6916.0,
+        8763.0,
+        9661.0,
+        10640.0,
+        12015.0,
+        12199.0,
+        12293.0,
+        12899.0,
+        13445.0,
+        13550.0,
+        13931.0,
+        14420.0,
+        14457.0,
+        14544.0,
+        14749.0,
+        14882.0,
+        15294.0,
+        16223.0,
+        16595.0,
+        16601.0,
+        17201.0,
+        17420.0,
+        17751.0,
+        18155.0,
+        19169.0,
+        19198.0,
+        19295.0,
+        20098.0,
+        20985.0,
+        21156.0,
+        21213.0,
+        21877.0,
+        22948.0,
+        23178.0,
+        24995.0,
+        25004.0,
+        25568.0,
+        26230.0,
+        35085.0,
+        36272.0,
+        39978.0,
+        72423.0,
+        72430.0,
+        75354.0
+      ]
+    },
+    "Friday": {
+      "stats": {
+        "min": 6950.0,
+        "q1": 16404.0,
+        "median": 20262.5,
+        "q3": 25404.0,
+        "max": 48590.0,
+        "mean": 21714.66,
+        "n": 44,
+        "whisker_lower": 6950.0,
+        "whisker_upper": 38658.0,
+        "outliers": [
+          39513.0,
+          48590.0
+        ]
+      },
+      "values": [
+        6950.0,
+        9798.0,
+        10919.0,
+        11150.0,
+        14824.0,
+        15401.0,
+        15445.0,
+        15466.0,
+        15832.0,
+        15911.0,
+        16287.0,
+        16443.0,
+        16670.0,
+        17572.0,
+        17716.0,
+        17723.0,
+        17839.0,
+        18165.0,
+        18732.0,
+        19730.0,
+        19920.0,
+        20118.0,
+        20407.0,
+        20755.0,
+        21168.0,
+        21458.0,
+        21820.0,
+        23629.0,
+        23770.0,
+        23780.0,
+        24132.0,
+        24580.0,
+        25116.0,
+        26268.0,
+        26295.0,
+        26444.0,
+        26864.0,
+        28373.0,
+        28547.0,
+        30607.0,
+        36060.0,
+        38658.0,
+        39513.0,
+        48590.0
+      ]
+    },
+    "Saturday": {
+      "stats": {
+        "min": 8707.0,
+        "q1": 23664.25,
+        "median": 29486.5,
+        "q3": 33418.0,
+        "max": 81921.0,
+        "mean": 29734.41,
+        "n": 44,
+        "whisker_lower": 15402.0,
+        "whisker_upper": 46647.0,
+        "outliers": [
+          8707.0,
+          81921.0
+        ]
+      },
+      "values": [
+        8707.0,
+        15402.0,
+        15715.0,
+        20347.0,
+        20652.0,
+        22406.0,
+        22647.0,
+        22976.0,
+        23046.0,
+        23462.0,
+        23617.0,
+        23680.0,
+        24580.0,
+        25620.0,
+        25721.0,
+        26923.0,
+        26944.0,
+        27798.0,
+        28468.0,
+        28864.0,
+        29127.0,
+        29268.0,
+        29705.0,
+        30023.0,
+        30073.0,
+        30266.0,
+        30487.0,
+        31018.0,
+        31108.0,
+        32031.0,
+        32159.0,
+        32694.0,
+        33295.0,
+        33787.0,
+        34004.0,
+        34351.0,
+        34793.0,
+        34987.0,
+        35913.0,
+        37036.0,
+        37177.0,
+        38869.0,
+        46647.0,
+        81921.0
+      ]
+    },
+    "Sunday": {
+      "stats": {
+        "min": 15422.0,
+        "q1": 22902.0,
+        "median": 29246.0,
+        "q3": 39667.0,
+        "max": 91992.0,
+        "mean": 32735.28,
+        "n": 43,
+        "whisker_lower": 15422.0,
+        "whisker_upper": 59006.0,
+        "outliers": [
+          91992.0
+        ]
+      },
+      "values": [
+        15422.0,
+        15588.0,
+        18676.0,
+        19078.0,
+        19130.0,
+        19690.0,
+        21387.0,
+        21456.0,
+        22572.0,
+        22658.0,
+        22836.0,
+        22968.0,
+        23565.0,
+        24048.0,
+        24376.0,
+        26746.0,
+        26998.0,
+        27046.0,
+        27286.0,
+        27593.0,
+        27615.0,
+        29246.0,
+        30253.0,
+        31871.0,
+        32140.0,
+        33044.0,
+        33648.0,
+        33746.0,
+        33758.0,
+        34899.0,
+        37349.0,
+        39302.0,
+        40032.0,
+        40659.0,
+        40965.0,
+        43825.0,
+        44323.0,
+        46943.0,
+        47776.0,
+        51387.0,
+        54719.0,
+        59006.0,
+        91992.0
+      ]
+    }
+  },
+  "top_items": [
+    {
+      "name": "Cappuccino",
+      "total_count": 900,
+      "avg_per_month": 90.0,
+      "avg_order_value": 944.45,
+      "monthly": {
+        "May 2025": 75,
+        "Jun 2025": 88,
+        "Jul 2025": 97,
+        "Aug 2025": 91,
+        "Sep 2025": 95,
+        "Oct 2025": 84,
+        "Nov 2025": 84,
+        "Dec 2025": 85,
+        "Jan 2026": 119,
+        "Feb 2026": 82
+      }
+    },
+    {
+      "name": "Americano (Standard)",
+      "total_count": 391,
+      "avg_per_month": 39.1,
+      "avg_order_value": 820.63,
+      "monthly": {
+        "May 2025": 0,
+        "Jun 2025": 0,
+        "Jul 2025": 0,
+        "Aug 2025": 0,
+        "Sep 2025": 11,
+        "Oct 2025": 73,
+        "Nov 2025": 61,
+        "Dec 2025": 66,
+        "Jan 2026": 100,
+        "Feb 2026": 80
+      }
+    },
+    {
+      "name": "Americano",
+      "total_count": 368,
+      "avg_per_month": 36.8,
+      "avg_order_value": 831.86,
+      "monthly": {
+        "May 2025": 48,
+        "Jun 2025": 68,
+        "Jul 2025": 99,
+        "Aug 2025": 91,
+        "Sep 2025": 62,
+        "Oct 2025": 0,
+        "Nov 2025": 0,
+        "Dec 2025": 0,
+        "Jan 2026": 0,
+        "Feb 2026": 0
+      }
+    },
+    {
+      "name": "Hazelnut Cappuccino",
+      "total_count": 356,
+      "avg_per_month": 35.6,
+      "avg_order_value": 1030.72,
+      "monthly": {
+        "May 2025": 30,
+        "Jun 2025": 24,
+        "Jul 2025": 30,
+        "Aug 2025": 31,
+        "Sep 2025": 35,
+        "Oct 2025": 48,
+        "Nov 2025": 36,
+        "Dec 2025": 41,
+        "Jan 2026": 57,
+        "Feb 2026": 24
+      }
+    },
+    {
+      "name": "Cafe Frappe",
+      "total_count": 332,
+      "avg_per_month": 33.2,
+      "avg_order_value": 1077.37,
+      "monthly": {
+        "May 2025": 47,
+        "Jun 2025": 45,
+        "Jul 2025": 45,
+        "Aug 2025": 29,
+        "Sep 2025": 54,
+        "Oct 2025": 31,
+        "Nov 2025": 17,
+        "Dec 2025": 14,
+        "Jan 2026": 26,
+        "Feb 2026": 24
+      }
+    },
+    {
+      "name": "Tiramisu",
+      "total_count": 328,
+      "avg_per_month": 32.8,
+      "avg_order_value": 1841.1,
+      "monthly": {
+        "May 2025": 9,
+        "Jun 2025": 21,
+        "Jul 2025": 40,
+        "Aug 2025": 31,
+        "Sep 2025": 60,
+        "Oct 2025": 45,
+        "Nov 2025": 28,
+        "Dec 2025": 44,
+        "Jan 2026": 28,
+        "Feb 2026": 22
+      }
+    },
+    {
+      "name": "Dry Chilli Chicken",
+      "total_count": 312,
+      "avg_per_month": 31.2,
+      "avg_order_value": 1581.71,
+      "monthly": {
+        "May 2025": 41,
+        "Jun 2025": 35,
+        "Jul 2025": 27,
+        "Aug 2025": 26,
+        "Sep 2025": 42,
+        "Oct 2025": 31,
+        "Nov 2025": 23,
+        "Dec 2025": 31,
+        "Jan 2026": 37,
+        "Feb 2026": 19
+      }
+    },
+    {
+      "name": "Fresh Lime Soda",
+      "total_count": 306,
+      "avg_per_month": 30.6,
+      "avg_order_value": 1945.9,
+      "monthly": {
+        "May 2025": 20,
+        "Jun 2025": 29,
+        "Jul 2025": 34,
+        "Aug 2025": 19,
+        "Sep 2025": 54,
+        "Oct 2025": 56,
+        "Nov 2025": 21,
+        "Dec 2025": 29,
+        "Jan 2026": 20,
+        "Feb 2026": 24
+      }
+    },
+    {
+      "name": "Tempura Prawn",
+      "total_count": 265,
+      "avg_per_month": 26.5,
+      "avg_order_value": 1895.8,
+      "monthly": {
+        "May 2025": 0,
+        "Jun 2025": 12,
+        "Jul 2025": 41,
+        "Aug 2025": 33,
+        "Sep 2025": 47,
+        "Oct 2025": 43,
+        "Nov 2025": 14,
+        "Dec 2025": 26,
+        "Jan 2026": 28,
+        "Feb 2026": 21
+      }
+    },
+    {
+      "name": "French Fries",
+      "total_count": 258,
+      "avg_per_month": 25.8,
+      "avg_order_value": 1150.77,
+      "monthly": {
+        "May 2025": 13,
+        "Jun 2025": 15,
+        "Jul 2025": 24,
+        "Aug 2025": 22,
+        "Sep 2025": 29,
+        "Oct 2025": 45,
+        "Nov 2025": 21,
+        "Dec 2025": 28,
+        "Jan 2026": 40,
+        "Feb 2026": 21
+      }
+    },
+    {
+      "name": "Cheese Garlic Bread",
+      "total_count": 254,
+      "avg_per_month": 25.4,
+      "avg_order_value": 968.0,
+      "monthly": {
+        "May 2025": 22,
+        "Jun 2025": 16,
+        "Jul 2025": 24,
+        "Aug 2025": 28,
+        "Sep 2025": 38,
+        "Oct 2025": 33,
+        "Nov 2025": 19,
+        "Dec 2025": 24,
+        "Jan 2026": 24,
+        "Feb 2026": 26
+      }
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "total_count": 254,
+      "avg_per_month": 25.4,
+      "avg_order_value": 1345.72,
+      "monthly": {
+        "May 2025": 35,
+        "Jun 2025": 21,
+        "Jul 2025": 27,
+        "Aug 2025": 36,
+        "Sep 2025": 29,
+        "Oct 2025": 27,
+        "Nov 2025": 23,
+        "Dec 2025": 16,
+        "Jan 2026": 28,
+        "Feb 2026": 12
+      }
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "total_count": 250,
+      "avg_per_month": 25.0,
+      "avg_order_value": 1395.32,
+      "monthly": {
+        "May 2025": 22,
+        "Jun 2025": 25,
+        "Jul 2025": 31,
+        "Aug 2025": 20,
+        "Sep 2025": 44,
+        "Oct 2025": 33,
+        "Nov 2025": 15,
+        "Dec 2025": 20,
+        "Jan 2026": 21,
+        "Feb 2026": 19
+      }
+    },
+    {
+      "name": "Creme Brulee",
+      "total_count": 250,
+      "avg_per_month": 25.0,
+      "avg_order_value": 1945.59,
+      "monthly": {
+        "May 2025": 9,
+        "Jun 2025": 34,
+        "Jul 2025": 31,
+        "Aug 2025": 27,
+        "Sep 2025": 32,
+        "Oct 2025": 31,
+        "Nov 2025": 17,
+        "Dec 2025": 38,
+        "Jan 2026": 20,
+        "Feb 2026": 11
+      }
+    },
+    {
+      "name": "Hot Choco Latte",
+      "total_count": 244,
+      "avg_per_month": 24.4,
+      "avg_order_value": 1085.91,
+      "monthly": {
+        "May 2025": 12,
+        "Jun 2025": 15,
+        "Jul 2025": 21,
+        "Aug 2025": 12,
+        "Sep 2025": 20,
+        "Oct 2025": 22,
+        "Nov 2025": 19,
+        "Dec 2025": 61,
+        "Jan 2026": 41,
+        "Feb 2026": 21
+      }
+    },
+    {
+      "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+      "total_count": 227,
+      "avg_per_month": 22.7,
+      "avg_order_value": 920.73,
+      "monthly": {
+        "May 2025": 0,
+        "Jun 2025": 0,
+        "Jul 2025": 0,
+        "Aug 2025": 0,
+        "Sep 2025": 0,
+        "Oct 2025": 38,
+        "Nov 2025": 36,
+        "Dec 2025": 41,
+        "Jan 2026": 74,
+        "Feb 2026": 38
+      }
+    },
+    {
+      "name": "Darjeeling Tea 1St Flush",
+      "total_count": 214,
+      "avg_per_month": 21.4,
+      "avg_order_value": 1076.77,
+      "monthly": {
+        "May 2025": 27,
+        "Jun 2025": 40,
+        "Jul 2025": 34,
+        "Aug 2025": 52,
+        "Sep 2025": 43,
+        "Oct 2025": 18,
+        "Nov 2025": 0,
+        "Dec 2025": 0,
+        "Jan 2026": 0,
+        "Feb 2026": 0
+      }
+    },
+    {
+      "name": "Hazelnut Frappe",
+      "total_count": 209,
+      "avg_per_month": 20.9,
+      "avg_order_value": 1229.64,
+      "monthly": {
+        "May 2025": 25,
+        "Jun 2025": 19,
+        "Jul 2025": 27,
+        "Aug 2025": 20,
+        "Sep 2025": 27,
+        "Oct 2025": 27,
+        "Nov 2025": 11,
+        "Dec 2025": 23,
+        "Jan 2026": 11,
+        "Feb 2026": 19
+      }
+    },
+    {
+      "name": "Grilled Chicken Steak In Mushroom Sauce",
+      "total_count": 199,
+      "avg_per_month": 19.9,
+      "avg_order_value": 1474.2,
+      "monthly": {
+        "May 2025": 8,
+        "Jun 2025": 17,
+        "Jul 2025": 17,
+        "Aug 2025": 27,
+        "Sep 2025": 15,
+        "Oct 2025": 20,
+        "Nov 2025": 19,
+        "Dec 2025": 35,
+        "Jan 2026": 26,
+        "Feb 2026": 15
+      }
+    },
+    {
+      "name": "Orange Mojito",
+      "total_count": 197,
+      "avg_per_month": 19.7,
+      "avg_order_value": 1656.6,
+      "monthly": {
+        "May 2025": 19,
+        "Jun 2025": 24,
+        "Jul 2025": 21,
+        "Aug 2025": 20,
+        "Sep 2025": 41,
+        "Oct 2025": 28,
+        "Nov 2025": 10,
+        "Dec 2025": 8,
+        "Jan 2026": 13,
+        "Feb 2026": 13
+      }
+    }
+  ],
+  "top_items_by_revenue": [
+    {
+      "name": "Cappuccino",
+      "qty": 1262.0,
+      "revenue": 164780.0,
+      "avg_price": 130.57,
+      "category": "Coffee"
+    },
+    {
+      "name": "Grilled Bhetki In Lemon Butter Sauce",
+      "qty": 190.0,
+      "revenue": 104050.0,
+      "avg_price": 547.63,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Dry Chilli Chicken",
+      "qty": 364.0,
+      "revenue": 101850.0,
+      "avg_price": 279.81,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 374.0,
+      "revenue": 98680.0,
+      "avg_price": 263.85,
+      "category": "Dessert"
+    },
+    {
+      "name": "Bhetki Fish N Chips",
+      "qty": 187.0,
+      "revenue": 98150.0,
+      "avg_price": 524.87,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Bhetki",
+      "qty": 192.0,
+      "revenue": 84340.0,
+      "avg_price": 439.27,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Mutton Chop Sizzler",
+      "qty": 155.0,
+      "revenue": 82550.0,
+      "avg_price": 532.58,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Grilled Chicken Steak In Mushroom Sauce",
+      "qty": 213.0,
+      "revenue": 80310.0,
+      "avg_price": 377.04,
+      "category": "Steaks"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 288.0,
+      "revenue": 77280.0,
+      "avg_price": 268.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "qty": 231.0,
+      "revenue": 75950.0,
+      "avg_price": 328.79,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Creme Brulee",
+      "qty": 286.0,
+      "revenue": 75050.0,
+      "avg_price": 262.41,
+      "category": "Dessert"
+    },
+    {
+      "name": "Mairathan  Combo Box",
+      "qty": 1500.0,
+      "revenue": 75000.0,
+      "avg_price": 50.0,
+      "category": "Steaks"
+    },
+    {
+      "name": "Americano (Standard)",
+      "qty": 548.0,
+      "revenue": 71660.0,
+      "avg_price": 130.77,
+      "category": "Coffee"
+    },
+    {
+      "name": "Fresh Lime Soda",
+      "qty": 474.0,
+      "revenue": 70150.0,
+      "avg_price": 148.0,
+      "category": "Mocktails"
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 261.0,
+      "revenue": 69360.0,
+      "avg_price": 265.75,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cafe Frappe",
+      "qty": 391.0,
+      "revenue": 65940.0,
+      "avg_price": 168.64,
+      "category": "Cold Coffee And Brews"
+    },
+    {
+      "name": "Tempura Prawn",
+      "qty": 163.0,
+      "revenue": 61690.0,
+      "avg_price": 378.47,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tempura Prawn Served With Assorted Dips",
+      "qty": 176.0,
+      "revenue": 61600.0,
+      "avg_price": 350.0,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Grilled Chicken Sizzler",
+      "qty": 150.0,
+      "revenue": 60690.0,
+      "avg_price": 404.6,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Cream Of Chicken",
+      "qty": 212.0,
+      "revenue": 60200.0,
+      "avg_price": 283.96,
+      "category": "Soup"
+    }
+  ],
+  "top_items_by_qty": [
+    {
+      "name": "Mairathan  Combo Box",
+      "qty": 1500.0,
+      "revenue": 75000.0,
+      "avg_price": 50.0,
+      "category": "Steaks"
+    },
+    {
+      "name": "Cappuccino",
+      "qty": 1262.0,
+      "revenue": 164780.0,
+      "avg_price": 130.57,
+      "category": "Coffee"
+    },
+    {
+      "name": "Americano (Standard)",
+      "qty": 548.0,
+      "revenue": 71660.0,
+      "avg_price": 130.77,
+      "category": "Coffee"
+    },
+    {
+      "name": "Americano",
+      "qty": 498.0,
+      "revenue": 59760.0,
+      "avg_price": 120.0,
+      "category": "Coffee"
+    },
+    {
+      "name": "Fresh Lime Soda",
+      "qty": 474.0,
+      "revenue": 70150.0,
+      "avg_price": 148.0,
+      "category": "Mocktails"
+    },
+    {
+      "name": "Hazelnut Cappuccino",
+      "qty": 444.0,
+      "revenue": 58020.0,
+      "avg_price": 130.68,
+      "category": "Coffee"
+    },
+    {
+      "name": "Cafe Frappe",
+      "qty": 391.0,
+      "revenue": 65940.0,
+      "avg_price": 168.64,
+      "category": "Cold Coffee And Brews"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 374.0,
+      "revenue": 98680.0,
+      "avg_price": 263.85,
+      "category": "Dessert"
+    },
+    {
+      "name": "Dry Chilli Chicken",
+      "qty": 364.0,
+      "revenue": 101850.0,
+      "avg_price": 279.81,
+      "category": "Small Eats"
+    },
+    {
+      "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+      "qty": 324.0,
+      "revenue": 45360.0,
+      "avg_price": 140.0,
+      "category": "Tea"
+    },
+    {
+      "name": "Darjeeling Tea 1St Flush",
+      "qty": 294.0,
+      "revenue": 33060.0,
+      "avg_price": 112.45,
+      "category": "Tea"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 288.0,
+      "revenue": 77280.0,
+      "avg_price": 268.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Creme Brulee",
+      "qty": 286.0,
+      "revenue": 75050.0,
+      "avg_price": 262.41,
+      "category": "Dessert"
+    },
+    {
+      "name": "Hot Choco Latte",
+      "qty": 271.0,
+      "revenue": 35380.0,
+      "avg_price": 130.55,
+      "category": "Coffee"
+    },
+    {
+      "name": "French Fries",
+      "qty": 266.0,
+      "revenue": 38190.0,
+      "avg_price": 143.57,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 261.0,
+      "revenue": 69360.0,
+      "avg_price": 265.75,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cheese Garlic Bread",
+      "qty": 258.5,
+      "revenue": 43415.0,
+      "avg_price": 167.95,
+      "category": "Toasted"
+    },
+    {
+      "name": "Hazelnut Frappe",
+      "qty": 242.0,
+      "revenue": 45650.0,
+      "avg_price": 188.64,
+      "category": "Cold Coffee And Brews"
+    },
+    {
+      "name": "Orange Mojito",
+      "qty": 239.0,
+      "revenue": 41610.0,
+      "avg_price": 174.1,
+      "category": "Mojito"
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "qty": 231.0,
+      "revenue": 75950.0,
+      "avg_price": 328.79,
+      "category": "Big Eats"
+    }
+  ],
+  "top_food_by_revenue": [
+    {
+      "name": "Grilled Bhetki In Lemon Butter Sauce",
+      "qty": 190.0,
+      "revenue": 104050.0,
+      "avg_price": 547.63,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Dry Chilli Chicken",
+      "qty": 364.0,
+      "revenue": 101850.0,
+      "avg_price": 279.81,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 374.0,
+      "revenue": 98680.0,
+      "avg_price": 263.85,
+      "category": "Dessert"
+    },
+    {
+      "name": "Bhetki Fish N Chips",
+      "qty": 187.0,
+      "revenue": 98150.0,
+      "avg_price": 524.87,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Bhetki",
+      "qty": 192.0,
+      "revenue": 84340.0,
+      "avg_price": 439.27,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Mutton Chop Sizzler",
+      "qty": 155.0,
+      "revenue": 82550.0,
+      "avg_price": 532.58,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Grilled Chicken Steak In Mushroom Sauce",
+      "qty": 213.0,
+      "revenue": 80310.0,
+      "avg_price": 377.04,
+      "category": "Steaks"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 288.0,
+      "revenue": 77280.0,
+      "avg_price": 268.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "qty": 231.0,
+      "revenue": 75950.0,
+      "avg_price": 328.79,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Creme Brulee",
+      "qty": 286.0,
+      "revenue": 75050.0,
+      "avg_price": 262.41,
+      "category": "Dessert"
+    },
+    {
+      "name": "Mairathan  Combo Box",
+      "qty": 1500.0,
+      "revenue": 75000.0,
+      "avg_price": 50.0,
+      "category": "Steaks"
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 261.0,
+      "revenue": 69360.0,
+      "avg_price": 265.75,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tempura Prawn",
+      "qty": 163.0,
+      "revenue": 61690.0,
+      "avg_price": 378.47,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tempura Prawn Served With Assorted Dips",
+      "qty": 176.0,
+      "revenue": 61600.0,
+      "avg_price": 350.0,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Grilled Chicken Sizzler",
+      "qty": 150.0,
+      "revenue": 60690.0,
+      "avg_price": 404.6,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Cream Of Chicken",
+      "qty": 212.0,
+      "revenue": 60200.0,
+      "avg_price": 283.96,
+      "category": "Soup"
+    },
+    {
+      "name": "Chicken Satay With Peanut Butter Sauce",
+      "qty": 213.0,
+      "revenue": 60170.0,
+      "avg_price": 282.49,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Smoked Chicken Sizzler",
+      "qty": 138.0,
+      "revenue": 54840.0,
+      "avg_price": 397.39,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Chicken Cheese Ball",
+      "qty": 167.0,
+      "revenue": 54050.0,
+      "avg_price": 323.65,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Double Chicken Steak In Mushroom Sauce",
+      "qty": 126.0,
+      "revenue": 53640.0,
+      "avg_price": 425.71,
+      "category": "Steaks"
+    }
+  ],
+  "top_food_by_qty": [
+    {
+      "name": "Mairathan  Combo Box",
+      "qty": 1500.0,
+      "revenue": 75000.0,
+      "avg_price": 50.0,
+      "category": "Steaks"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 374.0,
+      "revenue": 98680.0,
+      "avg_price": 263.85,
+      "category": "Dessert"
+    },
+    {
+      "name": "Dry Chilli Chicken",
+      "qty": 364.0,
+      "revenue": 101850.0,
+      "avg_price": 279.81,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 288.0,
+      "revenue": 77280.0,
+      "avg_price": 268.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Creme Brulee",
+      "qty": 286.0,
+      "revenue": 75050.0,
+      "avg_price": 262.41,
+      "category": "Dessert"
+    },
+    {
+      "name": "French Fries",
+      "qty": 266.0,
+      "revenue": 38190.0,
+      "avg_price": 143.57,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 261.0,
+      "revenue": 69360.0,
+      "avg_price": 265.75,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cheese Garlic Bread",
+      "qty": 258.5,
+      "revenue": 43415.0,
+      "avg_price": 167.95,
+      "category": "Toasted"
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "qty": 231.0,
+      "revenue": 75950.0,
+      "avg_price": 328.79,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Grilled Chicken Steak In Mushroom Sauce",
+      "qty": 213.0,
+      "revenue": 80310.0,
+      "avg_price": 377.04,
+      "category": "Steaks"
+    },
+    {
+      "name": "Chicken Satay With Peanut Butter Sauce",
+      "qty": 213.0,
+      "revenue": 60170.0,
+      "avg_price": 282.49,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cream Of Chicken",
+      "qty": 212.0,
+      "revenue": 60200.0,
+      "avg_price": 283.96,
+      "category": "Soup"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Bhetki",
+      "qty": 192.0,
+      "revenue": 84340.0,
+      "avg_price": 439.27,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Grilled Bhetki In Lemon Butter Sauce",
+      "qty": 190.0,
+      "revenue": 104050.0,
+      "avg_price": 547.63,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Bhetki Fish N Chips",
+      "qty": 187.0,
+      "revenue": 98150.0,
+      "avg_price": 524.87,
+      "category": "Big Eats"
+    },
+    {
+      "name": "Chilli Cheese Toast",
+      "qty": 184.0,
+      "revenue": 29180.0,
+      "avg_price": 158.59,
+      "category": "Toasted"
+    },
+    {
+      "name": "Tempura Prawn Served With Assorted Dips",
+      "qty": 176.0,
+      "revenue": 61600.0,
+      "avg_price": 350.0,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cake Of The Day",
+      "qty": 169.0,
+      "revenue": 42250.0,
+      "avg_price": 250.0,
+      "category": "Dessert"
+    },
+    {
+      "name": "Chicken Cheese Ball",
+      "qty": 167.0,
+      "revenue": 54050.0,
+      "avg_price": 323.65,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Tempura Prawn",
+      "qty": 163.0,
+      "revenue": 61690.0,
+      "avg_price": 378.47,
+      "category": "Small Eats"
+    }
+  ],
+  "time_slots": [
+    {
+      "slot": "00:00\u201304:00",
+      "revenue": 136243.0,
+      "orders": 84,
+      "label": "00:00\u201304:00"
+    },
+    {
+      "slot": "04:00\u201308:00",
+      "revenue": 0.0,
+      "orders": 0,
+      "label": "04:00\u201308:00"
+    },
+    {
+      "slot": "08:00\u201312:00",
+      "revenue": 44660.0,
+      "orders": 40,
+      "label": "08:00\u201312:00"
+    },
+    {
+      "slot": "12:00\u201316:00",
+      "revenue": 1047138.0,
+      "orders": 1054,
+      "label": "12:00\u201316:00"
+    },
+    {
+      "slot": "16:00\u201320:00",
+      "revenue": 2080382.0,
+      "orders": 2689,
+      "label": "16:00\u201320:00"
+    },
+    {
+      "slot": "20:00\u201324:00",
+      "revenue": 3691417.0,
+      "orders": 3573,
+      "label": "20:00\u201324:00"
+    }
+  ],
+  "monthly_detail": {
+    "Feb 2026": {
+      "daily": [
+        {
+          "date": "2026-02-01",
+          "revenue": 46943.0,
+          "orders": 46
+        },
+        {
+          "date": "2026-02-03",
+          "revenue": 19195.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-02-04",
+          "revenue": 14841.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-02-05",
+          "revenue": 20098.0,
+          "orders": 28
+        },
+        {
+          "date": "2026-02-06",
+          "revenue": 15466.0,
+          "orders": 20
+        },
+        {
+          "date": "2026-02-07",
+          "revenue": 37177.0,
+          "orders": 38
+        },
+        {
+          "date": "2026-02-08",
+          "revenue": 51387.0,
+          "orders": 27
+        },
+        {
+          "date": "2026-02-09",
+          "revenue": 16743.0,
+          "orders": 23
+        },
+        {
+          "date": "2026-02-10",
+          "revenue": 25221.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-02-11",
+          "revenue": 34689.0,
+          "orders": 32
+        },
+        {
+          "date": "2026-02-12",
+          "revenue": 16223.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-02-13",
+          "revenue": 25116.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-02-14",
+          "revenue": 46647.0,
+          "orders": 51
+        },
+        {
+          "date": "2026-02-15",
+          "revenue": 15422.0,
+          "orders": 18
+        },
+        {
+          "date": "2026-02-16",
+          "revenue": 12680.0,
+          "orders": 17
+        },
+        {
+          "date": "2026-02-17",
+          "revenue": 17002.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-02-18",
+          "revenue": 21007.0,
+          "orders": 25
+        },
+        {
+          "date": "2026-02-19",
+          "revenue": 10640.0,
+          "orders": 18
+        },
+        {
+          "date": "2026-02-20",
+          "revenue": 16287.0,
+          "orders": 21
+        },
+        {
+          "date": "2026-02-21",
+          "revenue": 15715.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-02-22",
+          "revenue": 91992.0,
+          "orders": 21
+        },
+        {
+          "date": "2026-02-23",
+          "revenue": 16910.0,
+          "orders": 21
+        },
+        {
+          "date": "2026-02-24",
+          "revenue": 14086.0,
+          "orders": 18
+        },
+        {
+          "date": "2026-02-25",
+          "revenue": 14265.0,
+          "orders": 21
+        },
+        {
+          "date": "2026-02-26",
+          "revenue": 14457.0,
+          "orders": 20
+        },
+        {
+          "date": "2026-02-27",
+          "revenue": 17723.0,
+          "orders": 18
+        },
+        {
+          "date": "2026-02-28",
+          "revenue": 23046.0,
+          "orders": 31
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 82
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 80
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 38
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 2nd Flush",
+          "count": 28
+        },
+        {
+          "name": "Cheese Garlic Bread",
+          "count": 26
+        },
+        {
+          "name": "NSA Malt - Hot",
+          "count": 24
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 24
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 24
+        },
+        {
+          "name": "Chicken In Choice Of Sauce",
+          "count": 24
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 24
+        }
+      ]
+    },
+    "Jan 2026": {
+      "daily": [
+        {
+          "date": "2026-01-01",
+          "revenue": 72430.0,
+          "orders": 32
+        },
+        {
+          "date": "2026-01-02",
+          "revenue": 26268.0,
+          "orders": 26
+        },
+        {
+          "date": "2026-01-03",
+          "revenue": 30266.0,
+          "orders": 31
+        },
+        {
+          "date": "2026-01-04",
+          "revenue": 27286.0,
+          "orders": 25
+        },
+        {
+          "date": "2026-01-05",
+          "revenue": 16919.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-01-06",
+          "revenue": 18249.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-01-07",
+          "revenue": 14870.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-01-08",
+          "revenue": 25004.0,
+          "orders": 30
+        },
+        {
+          "date": "2026-01-09",
+          "revenue": 24132.0,
+          "orders": 31
+        },
+        {
+          "date": "2026-01-10",
+          "revenue": 29127.0,
+          "orders": 32
+        },
+        {
+          "date": "2026-01-11",
+          "revenue": 27593.0,
+          "orders": 31
+        },
+        {
+          "date": "2026-01-12",
+          "revenue": 14618.0,
+          "orders": 23
+        },
+        {
+          "date": "2026-01-13",
+          "revenue": 17266.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-01-14",
+          "revenue": 34070.0,
+          "orders": 34
+        },
+        {
+          "date": "2026-01-15",
+          "revenue": 15294.0,
+          "orders": 29
+        },
+        {
+          "date": "2026-01-16",
+          "revenue": 16670.0,
+          "orders": 20
+        },
+        {
+          "date": "2026-01-17",
+          "revenue": 33295.0,
+          "orders": 42
+        },
+        {
+          "date": "2026-01-18",
+          "revenue": 47776.0,
+          "orders": 29
+        },
+        {
+          "date": "2026-01-19",
+          "revenue": 13750.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-01-20",
+          "revenue": 15298.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-01-21",
+          "revenue": 16449.0,
+          "orders": 23
+        },
+        {
+          "date": "2026-01-22",
+          "revenue": 23178.0,
+          "orders": 25
+        },
+        {
+          "date": "2026-01-23",
+          "revenue": 36060.0,
+          "orders": 44
+        },
+        {
+          "date": "2026-01-24",
+          "revenue": 30487.0,
+          "orders": 28
+        },
+        {
+          "date": "2026-01-25",
+          "revenue": 22836.0,
+          "orders": 26
+        },
+        {
+          "date": "2026-01-26",
+          "revenue": 29366.0,
+          "orders": 33
+        },
+        {
+          "date": "2026-01-27",
+          "revenue": 14224.0,
+          "orders": 23
+        },
+        {
+          "date": "2026-01-28",
+          "revenue": 16247.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-01-29",
+          "revenue": 19295.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-01-30",
+          "revenue": 20407.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-01-31",
+          "revenue": 38869.0,
+          "orders": 43
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 119
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 100
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 74
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 57
+        },
+        {
+          "name": "Cake Of The Day",
+          "count": 53
+        },
+        {
+          "name": "Hot Choco Latte",
+          "count": 41
+        },
+        {
+          "name": "French Fries",
+          "count": 40
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 37
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 2nd Flush",
+          "count": 31
+        },
+        {
+          "name": "NSA Malt - Hot",
+          "count": 30
+        }
+      ]
+    },
+    "Dec 2025": {
+      "daily": [
+        {
+          "date": "2025-12-01",
+          "revenue": 14829.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-12-02",
+          "revenue": 14625.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-12-03",
+          "revenue": 15071.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-12-04",
+          "revenue": 14749.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-12-05",
+          "revenue": 6950.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-12-06",
+          "revenue": 32159.0,
+          "orders": 28
+        },
+        {
+          "date": "2025-12-07",
+          "revenue": 26998.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-12-08",
+          "revenue": 10486.0,
+          "orders": 14
+        },
+        {
+          "date": "2025-12-09",
+          "revenue": 17095.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-12-10",
+          "revenue": 21367.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-12-11",
+          "revenue": 17420.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-12-12",
+          "revenue": 21168.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-12-13",
+          "revenue": 25721.0,
+          "orders": 34
+        },
+        {
+          "date": "2025-12-14",
+          "revenue": 34899.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-12-15",
+          "revenue": 16086.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-12-16",
+          "revenue": 10339.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-12-17",
+          "revenue": 25876.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-12-18",
+          "revenue": 14420.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-12-19",
+          "revenue": 9798.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-12-20",
+          "revenue": 20347.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-12-21",
+          "revenue": 39302.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-12-22",
+          "revenue": 16805.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-12-23",
+          "revenue": 21456.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-12-24",
+          "revenue": 43690.0,
+          "orders": 37
+        },
+        {
+          "date": "2025-12-25",
+          "revenue": 72423.0,
+          "orders": 57
+        },
+        {
+          "date": "2025-12-26",
+          "revenue": 21458.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-12-27",
+          "revenue": 20652.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-12-28",
+          "revenue": 32140.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-12-29",
+          "revenue": 26608.0,
+          "orders": 33
+        },
+        {
+          "date": "2025-12-30",
+          "revenue": 43433.0,
+          "orders": 39
+        },
+        {
+          "date": "2025-12-31",
+          "revenue": 41716.0,
+          "orders": 36
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 85
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 66
+        },
+        {
+          "name": "Hot Choco Latte",
+          "count": 61
+        },
+        {
+          "name": "Cake Of The Day",
+          "count": 58
+        },
+        {
+          "name": "Tiramisu",
+          "count": 44
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 41
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 41
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 2nd Flush",
+          "count": 41
+        },
+        {
+          "name": "Creme Brulee",
+          "count": 38
+        },
+        {
+          "name": "Grilled Chicken Steak In Mushroom Sauce",
+          "count": 35
+        }
+      ]
+    },
+    "Nov 2025": {
+      "daily": [
+        {
+          "date": "2025-11-01",
+          "revenue": 37036.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-11-02",
+          "revenue": 24048.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-11-03",
+          "revenue": 7681.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-11-04",
+          "revenue": 12958.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-11-05",
+          "revenue": 18450.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-11-06",
+          "revenue": 9661.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-11-07",
+          "revenue": 17572.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-11-08",
+          "revenue": 33787.0,
+          "orders": 28
+        },
+        {
+          "date": "2025-11-09",
+          "revenue": 23565.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-11-10",
+          "revenue": 11370.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-11-11",
+          "revenue": 9226.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-11-12",
+          "revenue": 17306.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-11-13",
+          "revenue": 12015.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-11-14",
+          "revenue": 24580.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-11-15",
+          "revenue": 22647.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-11-16",
+          "revenue": 21456.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-11-17",
+          "revenue": 17877.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-11-18",
+          "revenue": 16719.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-11-19",
+          "revenue": 9589.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-11-20",
+          "revenue": 13931.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-11-21",
+          "revenue": 15445.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-11-22",
+          "revenue": 26923.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-11-23",
+          "revenue": 22572.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-11-24",
+          "revenue": 8137.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-11-25",
+          "revenue": 19803.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-11-26",
+          "revenue": 10383.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-11-27",
+          "revenue": 13445.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-11-28",
+          "revenue": 19730.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-11-29",
+          "revenue": 15402.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-11-30",
+          "revenue": 22658.0,
+          "orders": 31
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 84
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 61
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 36
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 36
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 2nd Flush",
+          "count": 31
+        },
+        {
+          "name": "Cream Of Chicken",
+          "count": 29
+        },
+        {
+          "name": "Tiramisu",
+          "count": 28
+        },
+        {
+          "name": "Fish Finger 6 Pcs Basa",
+          "count": 23
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 23
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 21
+        }
+      ]
+    },
+    "Oct 2025": {
+      "daily": [
+        {
+          "date": "2025-10-01",
+          "revenue": 115832.0,
+          "orders": 75
+        },
+        {
+          "date": "2025-10-02",
+          "revenue": 75354.0,
+          "orders": 54
+        },
+        {
+          "date": "2025-10-03",
+          "revenue": 39513.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-10-04",
+          "revenue": 32694.0,
+          "orders": 31
+        },
+        {
+          "date": "2025-10-05",
+          "revenue": 27046.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-10-06",
+          "revenue": 9378.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-10-07",
+          "revenue": 14322.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-10-08",
+          "revenue": 25156.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-10-09",
+          "revenue": 14882.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-10-10",
+          "revenue": 23629.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-10-11",
+          "revenue": 34351.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-10-12",
+          "revenue": 26746.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-10-13",
+          "revenue": 17937.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-10-14",
+          "revenue": 10005.0,
+          "orders": 14
+        },
+        {
+          "date": "2025-10-15",
+          "revenue": 25951.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-10-16",
+          "revenue": 17201.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-10-17",
+          "revenue": 20755.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-10-18",
+          "revenue": 25620.0,
+          "orders": 28
+        },
+        {
+          "date": "2025-10-19",
+          "revenue": 40659.0,
+          "orders": 43
+        },
+        {
+          "date": "2025-10-20",
+          "revenue": 19009.0,
+          "orders": 14
+        },
+        {
+          "date": "2025-10-21",
+          "revenue": 25994.0,
+          "orders": 31
+        },
+        {
+          "date": "2025-10-22",
+          "revenue": 18247.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-10-23",
+          "revenue": 35085.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-10-24",
+          "revenue": 18732.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-10-25",
+          "revenue": 26944.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-10-26",
+          "revenue": 18676.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-10-27",
+          "revenue": 13442.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-10-28",
+          "revenue": 13501.0,
+          "orders": 11
+        },
+        {
+          "date": "2025-10-29",
+          "revenue": 15322.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-10-30",
+          "revenue": 39978.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-10-31",
+          "revenue": 17839.0,
+          "orders": 22
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 84
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 73
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 56
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 48
+        },
+        {
+          "name": "Tiramisu",
+          "count": 45
+        },
+        {
+          "name": "French Fries",
+          "count": 45
+        },
+        {
+          "name": "Tempura Prawn",
+          "count": 43
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 38
+        },
+        {
+          "name": "Cheese Garlic Bread",
+          "count": 33
+        },
+        {
+          "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+          "count": 33
+        }
+      ]
+    },
+    "Sep 2025": {
+      "daily": [
+        {
+          "date": "2025-09-01",
+          "revenue": 12410.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-09-02",
+          "revenue": 14342.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-09-03",
+          "revenue": 21397.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-09-04",
+          "revenue": 12899.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-09-05",
+          "revenue": 26444.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-09-06",
+          "revenue": 32031.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-09-07",
+          "revenue": 40032.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-09-08",
+          "revenue": 12054.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-09-09",
+          "revenue": 17010.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-09-10",
+          "revenue": 18717.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-09-11",
+          "revenue": 12293.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-09-12",
+          "revenue": 18165.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-09-13",
+          "revenue": 30023.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-09-14",
+          "revenue": 19130.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-09-15",
+          "revenue": 5821.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-09-16",
+          "revenue": 10345.0,
+          "orders": 14
+        },
+        {
+          "date": "2025-09-17",
+          "revenue": 19181.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-09-18",
+          "revenue": 16601.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-09-19",
+          "revenue": 11150.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-09-20",
+          "revenue": 31108.0,
+          "orders": 40
+        },
+        {
+          "date": "2025-09-21",
+          "revenue": 40965.0,
+          "orders": 37
+        },
+        {
+          "date": "2025-09-22",
+          "revenue": 11052.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-09-23",
+          "revenue": 17472.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-09-24",
+          "revenue": 16108.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-09-25",
+          "revenue": 16595.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-09-26",
+          "revenue": 38658.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-09-27",
+          "revenue": 81921.0,
+          "orders": 51
+        },
+        {
+          "date": "2025-09-28",
+          "revenue": 59006.0,
+          "orders": 50
+        },
+        {
+          "date": "2025-09-29",
+          "revenue": 83246.0,
+          "orders": 63
+        },
+        {
+          "date": "2025-09-30",
+          "revenue": 88645.0,
+          "orders": 62
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 95
+        },
+        {
+          "name": "Americano",
+          "count": 62
+        },
+        {
+          "name": "Tiramisu",
+          "count": 60
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 54
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 54
+        },
+        {
+          "name": "Tempura Prawn",
+          "count": 47
+        },
+        {
+          "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+          "count": 44
+        },
+        {
+          "name": "Darjeeling Tea 1St Flush",
+          "count": 43
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 42
+        },
+        {
+          "name": "Orange Mojito",
+          "count": 41
+        }
+      ]
+    },
+    "Aug 2025": {
+      "daily": [
+        {
+          "date": "2025-08-01",
+          "revenue": 17716.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-08-02",
+          "revenue": 29705.0,
+          "orders": 31
+        },
+        {
+          "date": "2025-08-03",
+          "revenue": 54719.0,
+          "orders": 44
+        },
+        {
+          "date": "2025-08-04",
+          "revenue": 12834.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-08-05",
+          "revenue": 10981.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-08-06",
+          "revenue": 17322.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-08-07",
+          "revenue": 21877.0,
+          "orders": 28
+        },
+        {
+          "date": "2025-08-08",
+          "revenue": 15401.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-08-09",
+          "revenue": 28468.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-08-10",
+          "revenue": 19078.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-08-11",
+          "revenue": 9953.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-08-12",
+          "revenue": 20892.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-08-13",
+          "revenue": 21824.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-08-14",
+          "revenue": 21156.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-08-15",
+          "revenue": 48590.0,
+          "orders": 32
+        },
+        {
+          "date": "2025-08-16",
+          "revenue": 8707.0,
+          "orders": 14
+        },
+        {
+          "date": "2025-08-17",
+          "revenue": 19690.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-08-18",
+          "revenue": 16757.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-08-19",
+          "revenue": 20013.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-08-20",
+          "revenue": 12511.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-08-21",
+          "revenue": 12199.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-08-22",
+          "revenue": 16443.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-08-23",
+          "revenue": 24580.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-08-24",
+          "revenue": 33746.0,
+          "orders": 59
+        },
+        {
+          "date": "2025-08-25",
+          "revenue": 10263.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-08-26",
+          "revenue": 10539.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-08-27",
+          "revenue": 16188.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-08-28",
+          "revenue": 20985.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-08-29",
+          "revenue": 23770.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-08-30",
+          "revenue": 22406.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-08-31",
+          "revenue": 31871.0,
+          "orders": 41
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Americano",
+          "count": 91
+        },
+        {
+          "name": "Cappuccino",
+          "count": 91
+        },
+        {
+          "name": "Darjeeling Tea 1St Flush",
+          "count": 52
+        },
+        {
+          "name": "Brunch For Eye Donation",
+          "count": 41
+        },
+        {
+          "name": "Fish Finger 6 Pcs Basa",
+          "count": 36
+        },
+        {
+          "name": "Tempura Prawn",
+          "count": 33
+        },
+        {
+          "name": "Darjeeling Tea 2Nd Flush",
+          "count": 32
+        },
+        {
+          "name": "Tiramisu",
+          "count": 31
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 31
+        },
+        {
+          "name": "Lemon Ginger Honey Infusion",
+          "count": 29
+        }
+      ]
+    },
+    "Jul 2025": {
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "revenue": 24760.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-07-02",
+          "revenue": 11819.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-07-03",
+          "revenue": 19198.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-07-04",
+          "revenue": 21820.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-07-05",
+          "revenue": 23462.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-07-06",
+          "revenue": 27615.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-07-07",
+          "revenue": 16262.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-07-08",
+          "revenue": 15548.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-07-09",
+          "revenue": 25180.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-07-10",
+          "revenue": 18155.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-07-11",
+          "revenue": 19920.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-07-12",
+          "revenue": 34004.0,
+          "orders": 40
+        },
+        {
+          "date": "2025-07-13",
+          "revenue": 33648.0,
+          "orders": 38
+        },
+        {
+          "date": "2025-07-14",
+          "revenue": 10918.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-07-15",
+          "revenue": 11820.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-07-16",
+          "revenue": 8880.0,
+          "orders": 11
+        },
+        {
+          "date": "2025-07-17",
+          "revenue": 24995.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-07-18",
+          "revenue": 30607.0,
+          "orders": 31
+        },
+        {
+          "date": "2025-07-19",
+          "revenue": 28864.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-07-20",
+          "revenue": 24376.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-07-21",
+          "revenue": 12011.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-07-22",
+          "revenue": 8799.0,
+          "orders": 12
+        },
+        {
+          "date": "2025-07-23",
+          "revenue": 17964.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-07-24",
+          "revenue": 22948.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-07-25",
+          "revenue": 23780.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-07-26",
+          "revenue": 31018.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-07-27",
+          "revenue": 43825.0,
+          "orders": 33
+        },
+        {
+          "date": "2025-07-28",
+          "revenue": 16308.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-07-29",
+          "revenue": 13191.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-07-30",
+          "revenue": 22011.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-07-31",
+          "revenue": 36272.0,
+          "orders": 38
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Americano",
+          "count": 99
+        },
+        {
+          "name": "Cappuccino",
+          "count": 97
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 45
+        },
+        {
+          "name": "Tempura Prawn",
+          "count": 41
+        },
+        {
+          "name": "Tiramisu",
+          "count": 40
+        },
+        {
+          "name": "Chicken Satay With Peanut Butter Sauce",
+          "count": 37
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 34
+        },
+        {
+          "name": "Darjeeling Tea 1St Flush",
+          "count": 34
+        },
+        {
+          "name": "Darjeeling Tea 2Nd Flush",
+          "count": 32
+        },
+        {
+          "name": "Creme Brulee",
+          "count": 31
+        }
+      ]
+    },
+    "Jun 2025": {
+      "daily": [
+        {
+          "date": "2025-06-01",
+          "revenue": 22968.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-06-02",
+          "revenue": 11688.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-06-03",
+          "revenue": 18083.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-06-04",
+          "revenue": 17289.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-06-05",
+          "revenue": 6916.0,
+          "orders": 11
+        },
+        {
+          "date": "2025-06-06",
+          "revenue": 20118.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-06-07",
+          "revenue": 34987.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-06-08",
+          "revenue": 30253.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-06-09",
+          "revenue": 12333.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-06-10",
+          "revenue": 23260.0,
+          "orders": 22
+        },
+        {
+          "date": "2025-06-11",
+          "revenue": 15271.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-06-12",
+          "revenue": 26230.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-06-13",
+          "revenue": 26864.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-06-14",
+          "revenue": 35913.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-06-15",
+          "revenue": 21387.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-06-16",
+          "revenue": 4528.0,
+          "orders": 9
+        },
+        {
+          "date": "2025-06-17",
+          "revenue": 13878.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-06-18",
+          "revenue": 16991.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-06-19",
+          "revenue": 17751.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-06-20",
+          "revenue": 10919.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-06-21",
+          "revenue": 29268.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-06-22",
+          "revenue": 33044.0,
+          "orders": 36
+        },
+        {
+          "date": "2025-06-23",
+          "revenue": 20534.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-06-24",
+          "revenue": 18530.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-06-25",
+          "revenue": 18879.0,
+          "orders": 25
+        },
+        {
+          "date": "2025-06-26",
+          "revenue": 25568.0,
+          "orders": 26
+        },
+        {
+          "date": "2025-06-27",
+          "revenue": 28547.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-06-28",
+          "revenue": 23680.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-06-29",
+          "revenue": 29246.0,
+          "orders": 34
+        },
+        {
+          "date": "2025-06-30",
+          "revenue": 13779.0,
+          "orders": 17
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 88
+        },
+        {
+          "name": "Americano",
+          "count": 68
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 45
+        },
+        {
+          "name": "Chicken Satay With Peanut Butter Sauce",
+          "count": 42
+        },
+        {
+          "name": "Darjeeling Tea 1St Flush",
+          "count": 40
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 35
+        },
+        {
+          "name": "Creme Brulee",
+          "count": 34
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 29
+        },
+        {
+          "name": "Chicken Vietnamese Roll",
+          "count": 25
+        },
+        {
+          "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+          "count": 25
+        }
+      ]
+    },
+    "May 2025": {
+      "daily": [
+        {
+          "date": "2025-05-01",
+          "revenue": 8763.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-05-02",
+          "revenue": 15832.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-05-03",
+          "revenue": 23617.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-05-04",
+          "revenue": 15588.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-05-05",
+          "revenue": 3697.0,
+          "orders": 5
+        },
+        {
+          "date": "2025-05-06",
+          "revenue": 8119.0,
+          "orders": 11
+        },
+        {
+          "date": "2025-05-07",
+          "revenue": 9750.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-05-08",
+          "revenue": 19169.0,
+          "orders": 16
+        },
+        {
+          "date": "2025-05-09",
+          "revenue": 14824.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-05-10",
+          "revenue": 30073.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-05-11",
+          "revenue": 37349.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-05-12",
+          "revenue": 15290.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-05-13",
+          "revenue": 2980.0,
+          "orders": 8
+        },
+        {
+          "date": "2025-05-14",
+          "revenue": 13863.0,
+          "orders": 17
+        },
+        {
+          "date": "2025-05-15",
+          "revenue": 14544.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-05-16",
+          "revenue": 28373.0,
+          "orders": 29
+        },
+        {
+          "date": "2025-05-17",
+          "revenue": 27798.0,
+          "orders": 31
+        },
+        {
+          "date": "2025-05-18",
+          "revenue": 44323.0,
+          "orders": 40
+        },
+        {
+          "date": "2025-05-19",
+          "revenue": 15825.0,
+          "orders": 13
+        },
+        {
+          "date": "2025-05-20",
+          "revenue": 13118.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-05-21",
+          "revenue": 18177.0,
+          "orders": 21
+        },
+        {
+          "date": "2025-05-22",
+          "revenue": 21213.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-05-23",
+          "revenue": 15911.0,
+          "orders": 19
+        },
+        {
+          "date": "2025-05-24",
+          "revenue": 22976.0,
+          "orders": 24
+        },
+        {
+          "date": "2025-05-25",
+          "revenue": 33758.0,
+          "orders": 30
+        },
+        {
+          "date": "2025-05-26",
+          "revenue": 14091.0,
+          "orders": 15
+        },
+        {
+          "date": "2025-05-27",
+          "revenue": 19094.0,
+          "orders": 20
+        },
+        {
+          "date": "2025-05-28",
+          "revenue": 17967.0,
+          "orders": 23
+        },
+        {
+          "date": "2025-05-29",
+          "revenue": 13550.0,
+          "orders": 18
+        },
+        {
+          "date": "2025-05-30",
+          "revenue": 26295.0,
+          "orders": 27
+        },
+        {
+          "date": "2025-05-31",
+          "revenue": 34793.0,
+          "orders": 36
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 75
+        },
+        {
+          "name": "Americano",
+          "count": 48
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 47
+        },
+        {
+          "name": "Chicken Spanakopita Triangles With Assorted Dips",
+          "count": 47
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 41
+        },
+        {
+          "name": "Mint And Watermelon",
+          "count": 37
+        },
+        {
+          "name": "Fish Finger 6 Pcs Basa",
+          "count": 35
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "count": 30
+        },
+        {
+          "name": "Chilli Gondhoraj Cooler",
+          "count": 29
+        },
+        {
+          "name": "Darjeeling Tea 1St Flush",
+          "count": 27
+        }
+      ]
+    }
+  }
+}

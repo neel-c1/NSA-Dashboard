@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NSA Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d0c09;
+    --surface: #161410;
+    --surface2: #1e1b16;
+    --border: rgba(255,255,255,0.07);
+    --gold: #d4a843;
+    --gold-dim: rgba(212,168,67,0.15);
+    --coral: #e07a5f;
+    --teal: #81b29a;
+    --muted: rgba(245,240,232,0.45);
+    --text: #f5f0e8;
+    --subtext: rgba(245,240,232,0.6);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    padding: 0 0 48px;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-left h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--gold);
+  }
+  .header-left p {
+    font-size: 0.8rem;
+    color: var(--subtext);
+    margin-top: 2px;
+  }
+  .header-right {
+    font-size: 0.75rem;
+    color: var(--subtext);
+    text-align: right;
+  }
+  #period-badge {
+    display: inline-block;
+    background: var(--gold-dim);
+    color: var(--gold);
+    border: 1px solid rgba(212,168,67,0.3);
+    border-radius: 100px;
+    padding: 3px 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  /* ── Layout ── */
+  .main { padding: 32px 40px; max-width: 1600px; margin: 0 auto; }
+
+  /* ── KPI Cards ── */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .kpi {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .kpi.gold::before { background: var(--gold); }
+  .kpi.coral::before { background: var(--coral); }
+  .kpi.teal::before { background: var(--teal); }
+  .kpi.purple::before { background: #9b72cf; }
+  .kpi-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--subtext);
+    margin-bottom: 8px;
+  }
+  .kpi-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .kpi-sub {
+    font-size: 0.75rem;
+    color: var(--subtext);
+    margin-top: 6px;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .card-sub {
+    font-size: 0.72rem;
+    color: var(--subtext);
+  }
+
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .row-2 .card { margin-bottom: 0; }
+
+  /* ── Chart containers ── */
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  /* ── Items Table ── */
+  .items-table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  thead th {
+    text-align: left;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--subtext);
+    padding: 0 12px 12px 0;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: var(--gold); }
+  thead th.sort-asc::after { content: ' ↑'; color: var(--gold); }
+  thead th.sort-desc::after { content: ' ↓'; color: var(--gold); }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+  }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  tbody tr:last-child { border-bottom: none; }
+  td {
+    padding: 10px 12px 10px 0;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  td.name { white-space: normal; max-width: 260px; font-weight: 500; }
+  td.num { font-variant-numeric: tabular-nums; font-size: 0.8rem; }
+  .rank-badge {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    margin-right: 8px;
+    background: var(--surface2);
+    color: var(--subtext);
+  }
+  .rank-badge.top3 { background: var(--gold-dim); color: var(--gold); }
+
+  /* ── Bar fill ── */
+  .bar-fill-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+  }
+  .bar-fill-track {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .bar-fill-inner {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--gold);
+    opacity: 0.7;
+  }
+
+  /* ── Month cells ── */
+  .month-sparkline { display: flex; gap: 2px; align-items: flex-end; height: 20px; }
+  .spark-bar {
+    width: 6px;
+    border-radius: 1px 1px 0 0;
+    background: var(--gold);
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  tbody tr:hover .spark-bar { opacity: 0.9; }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.72rem;
+    color: var(--subtext);
+    margin-top: 16px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 2px;
+  }
+
+  /* ── Loading ── */
+  #loading {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 999;
+  }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 2px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #loading p { font-size: 0.8rem; color: var(--subtext); }
+
+  /* ── Tooltip override ── */
+  .chartjs-tooltip-custom {
+    background: #1e1b16 !important;
+    border: 1px solid rgba(212,168,67,0.25) !important;
+    border-radius: 8px !important;
+    color: var(--text) !important;
+    font-family: inherit !important;
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+  }
+
+  /* ── Drill-down panel ── */
+  .drilldown-panel {
+    border-color: rgba(212,168,67,0.22);
+    background: linear-gradient(160deg, #161410 0%, #191610 100%);
+    animation: slideDown 0.18s ease;
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .drilldown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .drilldown-close {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    color: var(--subtext);
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-family: inherit;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .drilldown-close:hover {
+    background: rgba(255,255,255,0.09);
+    color: var(--text);
+    border-color: rgba(255,255,255,0.12);
+  }
+  .drilldown-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 28px;
+  }
+  .drilldown-items-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--subtext);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .drilldown-item-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 9px;
+  }
+  .drilldown-item-rank {
+    width: 18px;
+    text-align: right;
+    font-size: 0.65rem;
+    color: var(--subtext);
+    flex-shrink: 0;
+  }
+  .drilldown-item-name {
+    font-size: 0.78rem;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .drilldown-item-bar-track {
+    width: 70px;
+    height: 3px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 2px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .drilldown-item-bar-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    opacity: 0.65;
+  }
+  .drilldown-item-count {
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--subtext);
+    width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .chart-monthly-hint {
+    font-size: 0.68rem;
+    color: var(--subtext);
+    opacity: 0.65;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 20px 16px; }
+    header { padding: 20px 16px; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .row-2 { grid-template-columns: 1fr; }
+    .drilldown-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Loading dashboard data…</p>
+</div>
+
+<header>
+  <div class="header-left">
+    <h1>No Strings Attached</h1>
+    <p id="header-address">BH 24 Salt Lake City Sector 2</p>
+  </div>
+  <div class="header-right">
+    <div id="period-badge">—</div>
+    <div>Generated <span id="gen-time">—</span></div>
+  </div>
+</header>
+
+<div class="main">
+
+  <!-- KPI Cards -->
+  <div class="kpi-grid">
+    <div class="kpi gold">
+      <div class="kpi-label">Total Revenue</div>
+      <div class="kpi-value" id="kpi-revenue">—</div>
+      <div class="kpi-sub" id="kpi-revenue-sub">across all months</div>
+    </div>
+    <div class="kpi coral">
+      <div class="kpi-label">Total Orders</div>
+      <div class="kpi-value" id="kpi-orders">—</div>
+      <div class="kpi-sub" id="kpi-orders-sub">printed orders</div>
+    </div>
+    <div class="kpi teal">
+      <div class="kpi-label">Avg Order Value</div>
+      <div class="kpi-value" id="kpi-aov">—</div>
+      <div class="kpi-sub">per order</div>
+    </div>
+    <div class="kpi purple">
+      <div class="kpi-label">Best Month</div>
+      <div class="kpi-value" id="kpi-best-month">—</div>
+      <div class="kpi-sub" id="kpi-best-rev">—</div>
+    </div>
+  </div>
+
+  <!-- Monthly Revenue -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Monthly Revenue</div>
+        <div class="card-sub">Grand total collected per month (₹)</div>
+      </div>
+      <div class="chart-monthly-hint">Click a bar to drill into daily breakdown</div>
+    </div>
+    <div class="chart-wrap" style="height:280px">
+      <canvas id="chart-monthly"></canvas>
+    </div>
+  </div>
+
+  <!-- Drill-down panel (hidden until a month bar is clicked) -->
+  <div id="drilldown-panel" class="card drilldown-panel" style="display:none;margin-bottom:24px;">
+    <div class="drilldown-header">
+      <div>
+        <div class="card-title" id="drilldown-title"></div>
+        <div class="card-sub" id="drilldown-sub"></div>
+      </div>
+      <button class="drilldown-close" id="drilldown-close">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
+          <path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Close
+      </button>
+    </div>
+    <div class="drilldown-grid">
+      <div>
+        <div class="chart-wrap" style="height:240px">
+          <canvas id="chart-drilldown-daily"></canvas>
+        </div>
+      </div>
+      <div>
+        <div class="drilldown-items-title">Top Items This Month</div>
+        <div id="drilldown-items"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Box Plot + Time of Day -->
+  <div class="row-2">
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Revenue Distribution by Day of Week</div>
+          <div class="card-sub">Box plot of daily revenue — median, IQR, and range</div>
+        </div>
+      </div>
+      <div class="chart-wrap" style="height:300px">
+        <canvas id="chart-boxplot"></canvas>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#d4a843"></div> IQR (Q1–Q3)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#fff;border-radius:50%"></div> Median</div>
+        <div class="legend-item"><div class="legend-dot" style="background:rgba(212,168,67,0.5);border-radius:50%"></div> Outliers (1.5×IQR)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#e07a5f;border-radius:50%"></div> Mean</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Sales by Time of Day</div>
+          <div class="card-sub">4-hour windows · revenue & order count</div>
+        </div>
+      </div>
+      <div class="chart-wrap" style="height:300px">
+        <canvas id="chart-timeslot"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Items -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Top Selling Items</div>
+        <div class="card-sub">Ranked by total order appearances · click column headers to sort</div>
+      </div>
+      <div class="card-sub" id="items-note" style="max-width:340px;text-align:right;font-size:0.7rem;">
+        Quantities reflect item appearances in orders.<br>
+        <em>Avg Order Value ↗</em> = mean total of orders containing that item — a proxy for which items drive higher-value orders.
+      </div>
+    </div>
+    <div class="items-table-wrap">
+      <table id="items-table">
+        <thead id="items-thead"></thead>
+        <tbody id="items-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Item Revenue Charts (from Petpooja Item Wise Sales Report) -->
+  <div id="item-revenue-section" style="display:none">
+    <div class="row-2">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Top Items by Revenue</div>
+            <div class="card-sub">All items · actual revenue from item-wise sales report</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:480px">
+          <canvas id="chart-items-revenue"></canvas>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Top Items by Quantity Sold</div>
+            <div class="card-sub">All items · units sold · tooltip shows revenue &amp; avg price</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:480px">
+          <canvas id="chart-items-qty"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-2">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Top Food Items by Revenue</div>
+            <div class="card-sub">Excluding all drink categories (coffee, tea, mocktails, shakes…)</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:480px">
+          <canvas id="chart-food-revenue"></canvas>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Top Food Items by Quantity Sold</div>
+            <div class="card-sub">Excluding all drink categories · tooltip shows revenue &amp; avg price</div>
+          </div>
+        </div>
+        <div class="chart-wrap" style="height:480px">
+          <canvas id="chart-food-qty"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+// ────────────────────────────────────────────────────────────────
+// Utilities
+// ────────────────────────────────────────────────────────────────
+const fmt = (n) =>
+  '₹' + Math.round(n).toLocaleString('en-IN');
+
+const fmtK = (n) => {
+  if (n >= 1e5) return '₹' + (n / 1e5).toFixed(1) + 'L';
+  if (n >= 1e3) return '₹' + (n / 1e3).toFixed(1) + 'K';
+  return '₹' + Math.round(n);
+};
+
+const CHART_DEFAULTS = {
+  color: 'rgba(245,240,232,0.6)',
+  font: { family: '-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', size: 11 },
+};
+Chart.defaults.color = CHART_DEFAULTS.color;
+Chart.defaults.font = CHART_DEFAULTS.font;
+Chart.defaults.animation = false;
+
+const gridOpts = {
+  color: 'rgba(255,255,255,0.05)',
+  drawTicks: false,
+};
+const tickOpts = { padding: 8, color: 'rgba(245,240,232,0.5)' };
+
+// ────────────────────────────────────────────────────────────────
+// Box-plot custom plugin
+// ────────────────────────────────────────────────────────────────
+function drawBoxPlotOnChart(ctx, chart) {
+  const stats = chart._boxplotStats;
+  if (!stats) return;
+  const xScale = chart.scales.x;
+  const yScale = chart.scales.y;
+  const axisMax = yScale.max;
+
+  stats.forEach((s, i) => {
+    if (!s || s.n === 0) return;
+    const xCenter = xScale.getPixelForTick(i);
+    const boxWidth = 38;
+    const halfBox = boxWidth / 2;
+
+    const pQ1     = yScale.getPixelForValue(s.q1);
+    const pQ3     = yScale.getPixelForValue(s.q3);
+    const pMedian = yScale.getPixelForValue(s.median);
+    const pWLo    = yScale.getPixelForValue(s.whisker_lower);
+    const pWHi    = yScale.getPixelForValue(s.whisker_upper);
+    const pMean   = yScale.getPixelForValue(Math.min(s.mean, axisMax));
+
+    ctx.save();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = 'rgba(212,168,67,0.75)';
+    ctx.fillStyle   = 'rgba(212,168,67,0.18)';
+
+    // Box Q1-Q3
+    ctx.beginPath();
+    ctx.roundRect(xCenter - halfBox, pQ3, boxWidth, pQ1 - pQ3, 4);
+    ctx.fill();
+    ctx.stroke();
+
+    // Median line
+    ctx.strokeStyle = 'rgba(245,240,232,0.9)';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    ctx.moveTo(xCenter - halfBox, pMedian);
+    ctx.lineTo(xCenter + halfBox, pMedian);
+    ctx.stroke();
+
+    // Tukey whiskers (solid, to 1.5xIQR fences)
+    ctx.strokeStyle = 'rgba(212,168,67,0.55)';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(xCenter, pQ3);
+    ctx.lineTo(xCenter, pWHi);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(xCenter, pQ1);
+    ctx.lineTo(xCenter, pWLo);
+    ctx.stroke();
+
+    // Whisker caps
+    [pWLo, pWHi].forEach(y => {
+      ctx.beginPath();
+      ctx.moveTo(xCenter - 10, y);
+      ctx.lineTo(xCenter + 10, y);
+      ctx.stroke();
+    });
+
+    // Outlier dots (hollow circles, skip those above the axis)
+    ctx.strokeStyle = 'rgba(212,168,67,0.5)';
+    ctx.lineWidth = 1;
+    (s.outliers || []).forEach(val => {
+      if (val > axisMax) return;
+      const py = yScale.getPixelForValue(val);
+      ctx.beginPath();
+      ctx.arc(xCenter, py, 3.5, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+
+    // Mean dot (coral)
+    ctx.fillStyle = '#e07a5f';
+    ctx.beginPath();
+    ctx.arc(xCenter, pMean, 4.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.restore();
+  });
+}
+
+const boxplotPlugin = {
+  id: 'boxplotDraw',
+  afterDatasetsDraw(chart) {
+    if (chart._boxplotStats) {
+      drawBoxPlotOnChart(chart.ctx, chart);
+    }
+  },
+};
+Chart.register(boxplotPlugin);
+
+// ────────────────────────────────────────────────────────────────
+// Drill-down
+// ────────────────────────────────────────────────────────────────
+let drilldownChart = null;
+let monthlyChartInst = null;
+let activeDrillMonth = null;
+
+function hideDrilldown() {
+  document.getElementById('drilldown-panel').style.display = 'none';
+  if (drilldownChart) { drilldownChart.destroy(); drilldownChart = null; }
+  // Reset bar colors
+  if (monthlyChartInst) {
+    const ds = monthlyChartInst.data.datasets[0];
+    ds.backgroundColor = ds.backgroundColor.map(() => 'rgba(212,168,67,0.72)');
+    ds.borderColor = ds.borderColor.map(() => 'rgba(212,168,67,0.9)');
+    monthlyChartInst.update();
+  }
+  activeDrillMonth = null;
+}
+
+function showDrilldown(data, monthKey, barIndex) {
+  if (activeDrillMonth === monthKey) { hideDrilldown(); return; }
+  activeDrillMonth = monthKey;
+
+  const detail = data.monthly_detail[monthKey];
+  if (!detail) return;
+
+  // Highlight clicked bar, dim others
+  if (monthlyChartInst) {
+    const ds = monthlyChartInst.data.datasets[0];
+    const n = ds.data.length;
+    ds.backgroundColor = Array.from({length: n}, (_, i) =>
+      i === barIndex ? 'rgba(212,168,67,0.92)' : 'rgba(212,168,67,0.28)');
+    ds.borderColor = Array.from({length: n}, (_, i) =>
+      i === barIndex ? 'rgba(212,168,67,1)' : 'rgba(212,168,67,0.35)');
+    monthlyChartInst.update();
+  }
+
+  const panel = document.getElementById('drilldown-panel');
+  panel.style.display = 'block';
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  const totalRev = detail.daily.reduce((s, d) => s + d.revenue, 0);
+  const totalOrd = detail.daily.reduce((s, d) => s + d.orders, 0);
+  document.getElementById('drilldown-title').textContent = monthKey + ' — Daily Breakdown';
+  document.getElementById('drilldown-sub').textContent =
+    `${detail.daily.length} days · ${totalOrd.toLocaleString('en-IN')} orders · ${fmtK(totalRev)} revenue`;
+
+  if (drilldownChart) { drilldownChart.destroy(); drilldownChart = null; }
+
+  const labels = detail.daily.map(d => {
+    const dt = new Date(d.date + 'T00:00:00');
+    return dt.getDate().toString();
+  });
+  const revenues = detail.daily.map(d => d.revenue);
+  const orders   = detail.daily.map(d => d.orders);
+
+  // Gold weekdays, teal weekends
+  const bgColors = detail.daily.map(d => {
+    const dow = new Date(d.date + 'T00:00:00').getDay();
+    return (dow === 0 || dow === 6) ? 'rgba(129,178,154,0.65)' : 'rgba(212,168,67,0.65)';
+  });
+
+  const ctx = document.getElementById('chart-drilldown-daily').getContext('2d');
+  drilldownChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Revenue (₹)',
+          data: revenues,
+          backgroundColor: bgColors,
+          borderColor: bgColors.map(c => c.replace('0.65', '0.9')),
+          borderWidth: 1,
+          borderRadius: 4,
+          borderSkipped: 'bottom',
+          yAxisID: 'y',
+          order: 1,
+        },
+        {
+          type: 'line',
+          label: 'Orders',
+          data: orders,
+          borderColor: '#e07a5f',
+          backgroundColor: 'rgba(224,122,95,0.08)',
+          borderWidth: 1.5,
+          pointRadius: 2.5,
+          pointBackgroundColor: '#e07a5f',
+          tension: 0.4,
+          yAxisID: 'y2',
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          position: 'top',
+          align: 'end',
+          labels: { boxWidth: 8, padding: 12, font: { size: 10 } },
+        },
+        tooltip: {
+          backgroundColor: '#1e1b16',
+          borderColor: 'rgba(212,168,67,0.25)',
+          borderWidth: 1,
+          padding: 10,
+          callbacks: {
+            title(items) {
+              const d = detail.daily[items[0].dataIndex];
+              const dt = new Date(d.date + 'T00:00:00');
+              return dt.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
+            },
+            label(ctx) {
+              if (ctx.datasetIndex === 0) return '  Revenue: ' + fmt(ctx.raw);
+              return '  Orders: ' + ctx.raw;
+            },
+          },
+        },
+      },
+      scales: {
+        x: { grid: gridOpts, ticks: { ...tickOpts, font: { size: 10 } } },
+        y: { grid: gridOpts, ticks: { ...tickOpts, callback: v => fmtK(v) } },
+        y2: {
+          position: 'right',
+          grid: { display: false },
+          ticks: { ...tickOpts, color: 'rgba(224,122,95,0.6)', font: { size: 10 } },
+        },
+      },
+    },
+  });
+
+  // Top items list
+  const container = document.getElementById('drilldown-items');
+  container.innerHTML = '';
+  const maxCount = detail.top_items[0]?.count || 1;
+  detail.top_items.forEach((item, idx) => {
+    const row = document.createElement('div');
+    row.className = 'drilldown-item-row';
+    row.innerHTML =
+      `<span class="drilldown-item-rank">${idx + 1}.</span>` +
+      `<span class="drilldown-item-name" title="${item.name}">${item.name}</span>` +
+      `<div class="drilldown-item-bar-track">` +
+        `<div class="drilldown-item-bar-fill" style="width:${item.count / maxCount * 100}%"></div>` +
+      `</div>` +
+      `<span class="drilldown-item-count">${item.count}</span>`;
+    container.appendChild(row);
+  });
+}
+
+// ────────────────────────────────────────────────────────────────
+// Build charts
+// ────────────────────────────────────────────────────────────────
+function buildMonthlyChart(data) {
+  const labels = data.monthly_revenue.map(d => d.month);
+  const revenues = data.monthly_revenue.map(d => d.revenue);
+  const orders = data.monthly_revenue.map(d => d.orders);
+
+  const ctx = document.getElementById('chart-monthly').getContext('2d');
+  ctx.canvas.style.cursor = 'pointer';
+
+  monthlyChartInst = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Revenue (₹)',
+          data: revenues,
+          backgroundColor: labels.map(() => 'rgba(212,168,67,0.72)'),
+          borderColor: labels.map(() => 'rgba(212,168,67,0.9)'),
+          borderWidth: 1,
+          borderRadius: 6,
+          borderSkipped: 'bottom',
+          yAxisID: 'y',
+          order: 1,
+        },
+        {
+          type: 'line',
+          label: 'Orders',
+          data: orders,
+          borderColor: '#e07a5f',
+          backgroundColor: 'rgba(224,122,95,0.1)',
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: '#e07a5f',
+          tension: 0.4,
+          yAxisID: 'y2',
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      onClick(event, elements) {
+        if (!elements.length) return;
+        const idx = elements[0].index;
+        const monthKey = labels[idx];
+        showDrilldown(data, monthKey, idx);
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+          align: 'end',
+          labels: { boxWidth: 10, padding: 16, font: { size: 11 } },
+        },
+        tooltip: {
+          backgroundColor: '#1e1b16',
+          borderColor: 'rgba(212,168,67,0.25)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label(ctx) {
+              if (ctx.datasetIndex === 0) return '  Revenue: ' + fmt(ctx.raw);
+              return '  Orders: ' + ctx.raw;
+            },
+          },
+        },
+      },
+      scales: {
+        x: { grid: gridOpts, ticks: tickOpts },
+        y: {
+          grid: gridOpts,
+          ticks: { ...tickOpts, callback: v => fmtK(v) },
+          title: { display: false },
+        },
+        y2: {
+          position: 'right',
+          grid: { display: false },
+          ticks: { ...tickOpts, color: 'rgba(224,122,95,0.6)' },
+        },
+      },
+    },
+  });
+}
+
+function buildBoxPlotChart(data) {
+  const DOW = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const statsArr = DOW.map(d => data.dow_distributions[d]?.stats || null);
+
+  const ctx = document.getElementById('chart-boxplot').getContext('2d');
+
+  // Cap y-axis at the highest Tukey whisker (outliers shown as dots above the boxes)
+  const allWhiskerUppers = DOW.flatMap(d => {
+    const s = data.dow_distributions[d]?.stats;
+    return s ? [s.whisker_upper] : [];
+  });
+
+  // Use whisker_upper values as invisible bars to drive the y-scale correctly.
+  // The boxplotDraw plugin draws actual boxes on top using chart._boxplotStats.
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: DOW.map(d => d.slice(0,3)),
+      datasets: [
+        {
+          label: 'Revenue',
+          data: statsArr.map(s => s ? s.whisker_upper : 0),
+          backgroundColor: 'transparent',
+          borderColor: 'transparent',
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label(ctx) {
+              const s = statsArr[ctx.dataIndex];
+              if (!s) return '';
+              return [
+                `  Max:    ${fmt(s.max)}`,
+                `  Q3:     ${fmt(s.q3)}`,
+                `  Median: ${fmt(s.median)}`,
+                `  Mean:   ${fmt(s.mean)}`,
+                `  Q1:     ${fmt(s.q1)}`,
+                `  Min:    ${fmt(s.min)}`,
+                `  Days:   ${s.n}`,
+              ];
+            },
+          },
+          backgroundColor: '#1e1b16',
+          borderColor: 'rgba(212,168,67,0.25)',
+          borderWidth: 1,
+          padding: 12,
+        },
+      },
+      scales: {
+        x: { grid: gridOpts, ticks: tickOpts },
+        y: {
+          grid: gridOpts,
+          min: 0,
+          max: Math.ceil(Math.max(...allWhiskerUppers) * 1.15 / 10000) * 10000,
+          ticks: { ...tickOpts, callback: v => fmtK(v) },
+        },
+      },
+    },
+  });
+  chart._boxplotStats = statsArr;
+}
+
+function buildTimeSlotChart(data) {
+  // Use index-based highlighting (slots 3,4,5 = noon onward) to avoid char encoding issues
+  const NOON_INDICES = new Set([3, 4, 5]);
+
+  const slots = data.time_slots;
+  const labels = slots.map(s => s.slot);
+  const revenues = slots.map(s => s.revenue);
+  const orders = slots.map(s => s.orders);
+
+  const bgColors = slots.map((s, i) =>
+    NOON_INDICES.has(i) ? 'rgba(212,168,67,0.75)' : 'rgba(212,168,67,0.25)'
+  );
+  const borderColors = slots.map((s, i) =>
+    NOON_INDICES.has(i) ? 'rgba(212,168,67,1)' : 'rgba(212,168,67,0.4)'
+  );
+
+  const ctx = document.getElementById('chart-timeslot').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Revenue (₹)',
+          data: revenues,
+          backgroundColor: bgColors,
+          borderColor: borderColors,
+          borderWidth: 1,
+          borderRadius: 5,
+          borderSkipped: 'bottom',
+          yAxisID: 'y',
+        },
+        {
+          type: 'line',
+          label: 'Orders',
+          data: orders,
+          borderColor: '#81b29a',
+          backgroundColor: 'rgba(129,178,154,0.1)',
+          borderWidth: 2,
+          pointRadius: 4,
+          pointBackgroundColor: '#81b29a',
+          tension: 0.4,
+          yAxisID: 'y2',
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'x',
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          position: 'top',
+          align: 'end',
+          labels: { boxWidth: 10, padding: 12, font: { size: 10 } },
+        },
+        tooltip: {
+          backgroundColor: '#1e1b16',
+          borderColor: 'rgba(212,168,67,0.25)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label(ctx) {
+              if (ctx.datasetIndex === 0) return '  Revenue: ' + fmt(ctx.raw);
+              return '  Orders:  ' + ctx.raw;
+            },
+            afterLabel(ctx) {
+              if (ctx.datasetIndex === 0) {
+                const slot = data.time_slots[ctx.dataIndex];
+                if (slot.orders > 0) {
+                  return '  Avg/order: ' + fmt(slot.revenue / slot.orders);
+                }
+              }
+              return '';
+            },
+          },
+        },
+      },
+      scales: {
+        x: { grid: gridOpts, ticks: tickOpts },
+        y: {
+          grid: gridOpts,
+          ticks: { ...tickOpts, callback: v => fmtK(v) },
+        },
+        y2: {
+          position: 'right',
+          grid: { display: false },
+          ticks: { ...tickOpts, color: 'rgba(129,178,154,0.6)' },
+        },
+      },
+    },
+  });
+}
+
+function buildItemsTable(data) {
+  const items = data.top_items;
+  const months = data.months;
+  const maxCount = items[0]?.total_count || 1;
+
+  const thead = document.getElementById('items-thead');
+  const tbody = document.getElementById('items-tbody');
+
+  // Headers
+  const cols = [
+    { key: 'rank',            label: '#',                sort: false },
+    { key: 'name',            label: 'Item',             sort: true },
+    { key: 'total_count',     label: 'Total Sold',       sort: true },
+    { key: 'avg_per_month',   label: 'Avg / Month',      sort: true },
+    { key: 'avg_order_value', label: 'Avg Order Value ↗', sort: true },
+    { key: 'monthly',         label: 'Monthly Trend (qty)', sort: false },
+    ...months.map(m => ({ key: m, label: m, sort: true, isMonth: true })),
+  ];
+
+  let sortKey = 'total_count';
+  let sortDir = -1;
+
+  function renderHeader() {
+    thead.innerHTML = '';
+    const tr = document.createElement('tr');
+    cols.forEach(col => {
+      const th = document.createElement('th');
+      th.textContent = col.label;
+      if (col.sort) {
+        th.addEventListener('click', () => {
+          if (sortKey === col.key) sortDir *= -1;
+          else { sortKey = col.key; sortDir = -1; }
+          renderBody();
+          renderHeader();
+        });
+        if (sortKey === col.key) {
+          th.className = sortDir === -1 ? 'sort-desc' : 'sort-asc';
+        }
+      }
+      tr.appendChild(th);
+    });
+    thead.appendChild(tr);
+  }
+
+  function renderBody() {
+    const sorted = [...items].sort((a, b) => {
+      let av = sortKey === 'rank'       ? items.indexOf(a)
+             : sortKey.includes(' 20') ? (a.monthly[sortKey] || 0)
+             : a[sortKey];
+      let bv = sortKey === 'rank'       ? items.indexOf(b)
+             : sortKey.includes(' 20') ? (b.monthly[sortKey] || 0)
+             : b[sortKey];
+      if (typeof av === 'string') return av.localeCompare(bv) * sortDir;
+      return (av - bv) * sortDir;
+    });
+
+    tbody.innerHTML = '';
+    sorted.forEach((item, idx) => {
+      const origRank = items.indexOf(item) + 1;
+      const tr = document.createElement('tr');
+
+      const monthVals = months.map(m => item.monthly[m] || 0);
+      const maxMonth = Math.max(...monthVals, 1);
+
+      const cellDefs = [
+        // rank
+        () => {
+          const td = document.createElement('td');
+          const badge = document.createElement('span');
+          badge.className = 'rank-badge' + (origRank <= 3 ? ' top3' : '');
+          badge.textContent = origRank;
+          td.appendChild(badge);
+          return td;
+        },
+        // name
+        () => {
+          const td = document.createElement('td');
+          td.className = 'name';
+          td.textContent = item.name;
+          return td;
+        },
+        // total
+        () => {
+          const td = document.createElement('td');
+          td.className = 'num';
+          const wrap = document.createElement('div');
+          wrap.className = 'bar-fill-wrap';
+          const track = document.createElement('div');
+          track.className = 'bar-fill-track';
+          const inner = document.createElement('div');
+          inner.className = 'bar-fill-inner';
+          inner.style.width = (item.total_count / maxCount * 100) + '%';
+          track.appendChild(inner);
+          wrap.appendChild(track);
+          wrap.insertAdjacentText('beforeend', item.total_count.toLocaleString('en-IN'));
+          td.appendChild(wrap);
+          return td;
+        },
+        // avg/month
+        () => {
+          const td = document.createElement('td');
+          td.className = 'num';
+          td.textContent = item.avg_per_month.toFixed(1);
+          return td;
+        },
+        // avg order value
+        () => {
+          const td = document.createElement('td');
+          td.className = 'num';
+          const maxAOV = Math.max(...items.map(x => x.avg_order_value), 1);
+          const wrap = document.createElement('div');
+          wrap.className = 'bar-fill-wrap';
+          const track = document.createElement('div');
+          track.className = 'bar-fill-track';
+          const inner = document.createElement('div');
+          inner.className = 'bar-fill-inner';
+          inner.style.width = (item.avg_order_value / maxAOV * 100) + '%';
+          inner.style.background = 'var(--teal)';
+          inner.style.opacity = '0.7';
+          track.appendChild(inner);
+          wrap.appendChild(track);
+          wrap.insertAdjacentText('beforeend', fmt(item.avg_order_value));
+          td.appendChild(wrap);
+          return td;
+        },
+        // sparkline
+        () => {
+          const td = document.createElement('td');
+          const spark = document.createElement('div');
+          spark.className = 'month-sparkline';
+          monthVals.forEach(v => {
+            const bar = document.createElement('div');
+            bar.className = 'spark-bar';
+            bar.style.height = Math.max(2, (v / maxMonth * 18)) + 'px';
+            bar.title = v;
+            spark.appendChild(bar);
+          });
+          td.appendChild(spark);
+          return td;
+        },
+        // per-month cells
+        ...months.map(m => () => {
+          const td = document.createElement('td');
+          td.className = 'num';
+          const v = item.monthly[m] || 0;
+          td.textContent = v || '—';
+          td.style.color = v === 0 ? 'rgba(245,240,232,0.2)' : '';
+          return td;
+        }),
+      ];
+
+      cellDefs.forEach(fn => tr.appendChild(fn()));
+      tbody.appendChild(tr);
+    });
+  }
+
+  renderHeader();
+  renderBody();
+}
+
+function buildKPIs(data) {
+  const totalRev = data.monthly_revenue.reduce((s, d) => s + d.revenue, 0);
+  const totalOrders = data.monthly_revenue.reduce((s, d) => s + d.orders, 0);
+  const aov = totalOrders > 0 ? totalRev / totalOrders : 0;
+  const best = [...data.monthly_revenue].sort((a, b) => b.revenue - a.revenue)[0];
+
+  document.getElementById('kpi-revenue').textContent = fmtK(totalRev);
+  document.getElementById('kpi-revenue-sub').textContent =
+    `${data.months.length} months · ${data.period}`;
+  document.getElementById('kpi-orders').textContent =
+    totalOrders.toLocaleString('en-IN');
+  document.getElementById('kpi-orders-sub').textContent =
+    `${(totalOrders / data.months.length).toFixed(0)} avg/month`;
+  document.getElementById('kpi-aov').textContent = fmtK(aov);
+  document.getElementById('kpi-best-month').textContent = best?.month || '—';
+  document.getElementById('kpi-best-rev').textContent =
+    best ? fmt(best.revenue) : '—';
+
+  document.getElementById('period-badge').textContent = data.period;
+  document.getElementById('gen-time').textContent = data.generated;
+}
+
+function buildHorizBarChart(canvasId, items, valueKey, valueLabel, color, tooltipExtra) {
+  const labels = items.map(d => d.name);
+  const values = items.map(d => d[valueKey]);
+
+  const ctx = document.getElementById(canvasId).getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: valueLabel,
+        data: values,
+        backgroundColor: color,
+        borderColor: color.replace(/[\d.]+\)$/, '0.9)'),
+        borderWidth: 1,
+        borderRadius: 4,
+        borderSkipped: 'left',
+      }],
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1e1b16',
+          borderColor: 'rgba(212,168,67,0.25)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label(ctx) { return '  ' + valueLabel + ': ' + tooltipExtra.primary(ctx.raw); },
+            afterLabel(ctx) {
+              const item = items[ctx.dataIndex];
+              return tooltipExtra.secondary(item);
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          grid: gridOpts,
+          ticks: { ...tickOpts, callback: v => tooltipExtra.xTick(v) },
+        },
+        y: {
+          grid: { display: false },
+          ticks: {
+            ...tickOpts,
+            font: { size: 10.5 },
+            callback(val) {
+              const label = this.getLabelForValue(val);
+              return label.length > 28 ? label.slice(0, 27) + '…' : label;
+            },
+          },
+        },
+      },
+    },
+  });
+}
+
+function buildItemRevenueCharts(data) {
+  if (!data.top_items_by_revenue || data.top_items_by_revenue.length === 0) return;
+
+  document.getElementById('item-revenue-section').style.display = 'block';
+
+  buildHorizBarChart(
+    'chart-items-revenue',
+    data.top_items_by_revenue,
+    'revenue',
+    'Revenue',
+    'rgba(212,168,67,0.65)',
+    {
+      primary: v => fmt(v),
+      secondary: item => [
+        '  Qty sold: ' + item.qty.toLocaleString('en-IN'),
+        '  Avg price: ' + fmt(item.avg_price),
+      ],
+      xTick: v => fmtK(v),
+    }
+  );
+
+  buildHorizBarChart(
+    'chart-items-qty',
+    data.top_items_by_qty,
+    'qty',
+    'Qty Sold',
+    'rgba(129,178,154,0.65)',
+    {
+      primary: v => v.toLocaleString('en-IN') + ' units',
+      secondary: item => [
+        '  Revenue: ' + fmt(item.revenue),
+        '  Avg price: ' + fmt(item.avg_price),
+      ],
+      xTick: v => v.toLocaleString('en-IN'),
+    }
+  );
+
+  if (data.top_food_by_revenue && data.top_food_by_revenue.length) {
+    buildHorizBarChart(
+      'chart-food-revenue',
+      data.top_food_by_revenue,
+      'revenue',
+      'Revenue',
+      'rgba(224,122,95,0.65)',
+      {
+        primary: v => fmt(v),
+        secondary: item => [
+          '  Qty sold: ' + item.qty.toLocaleString('en-IN'),
+          '  Avg price: ' + fmt(item.avg_price),
+          '  Category: ' + item.category,
+        ],
+        xTick: v => fmtK(v),
+      }
+    );
+
+    buildHorizBarChart(
+      'chart-food-qty',
+      data.top_food_by_qty,
+      'qty',
+      'Qty Sold',
+      'rgba(155,114,207,0.65)',
+      {
+        primary: v => v.toLocaleString('en-IN') + ' units',
+        secondary: item => [
+          '  Revenue: ' + fmt(item.revenue),
+          '  Avg price: ' + fmt(item.avg_price),
+          '  Category: ' + item.category,
+        ],
+        xTick: v => v.toLocaleString('en-IN'),
+      }
+    );
+  }
+}
+
+// ────────────────────────────────────────────────────────────────
+// Bootstrap
+// ────────────────────────────────────────────────────────────────
+fetch('dashboard_data.json')
+  .then(r => {
+    if (!r.ok) throw new Error('dashboard_data.json not found');
+    return r.json();
+  })
+  .then(data => {
+    document.getElementById('loading').style.display = 'none';
+    buildKPIs(data);
+    buildMonthlyChart(data);
+    buildBoxPlotChart(data);
+    buildTimeSlotChart(data);
+    buildItemsTable(data);
+    buildItemRevenueCharts(data);
+    document.getElementById('drilldown-close').addEventListener('click', hideDrilldown);
+  })
+  .catch(err => {
+    document.getElementById('loading').innerHTML = `
+      <div style="text-align:center;color:#e07a5f;max-width:420px;padding:32px">
+        <div style="font-size:2rem;margin-bottom:16px">⚠</div>
+        <div style="font-weight:700;margin-bottom:8px">Could not load data</div>
+        <div style="font-size:0.8rem;opacity:0.7;line-height:1.6">
+          Run <code style="background:#1e1b16;padding:2px 6px;border-radius:4px">python3 process_data.py</code>
+          to generate <code style="background:#1e1b16;padding:2px 6px;border-radius:4px">dashboard_data.json</code>,
+          then serve this folder:<br><br>
+          <code style="background:#1e1b16;padding:6px 10px;border-radius:4px;display:block">
+            python3 -m http.server 8080
+          </code><br>
+          and open <a href="http://localhost:8080" style="color:#d4a843">http://localhost:8080</a>
+        </div>
+        <div style="font-size:0.7rem;margin-top:16px;opacity:0.4">${err.message}</div>
+      </div>
+    `;
+  });
+</script>
+</body>
+</html>
