@@ -1,8 +1,8 @@
 {
   "restaurant": "No Strings Attached",
   "address": "BH 24 Salt Lake City Sector 2",
-  "period": "May 2025 \u2013 Feb 2026",
-  "generated": "07 Mar 2026 17:19",
+  "period": "May 2025 \u2013 Mar 2026",
+  "generated": "02 Apr 2026 21:21",
   "months": [
     "May 2025",
     "Jun 2025",
@@ -13,7 +13,8 @@
     "Nov 2025",
     "Dec 2025",
     "Jan 2026",
-    "Feb 2026"
+    "Feb 2026",
+    "Mar 2026"
   ],
   "monthly_revenue": [
     {
@@ -65,20 +66,25 @@
       "month": "Feb 2026",
       "revenue": 670978.0,
       "orders": 667
+    },
+    {
+      "month": "Mar 2026",
+      "revenue": 627579.0,
+      "orders": 683
     }
   ],
   "dow_distributions": {
     "Monday": {
       "stats": {
         "min": 3697.0,
-        "q1": 11131.5,
-        "median": 13764.5,
-        "q3": 16753.5,
+        "q1": 10985.0,
+        "median": 13750.0,
+        "q3": 16781.0,
         "max": 83246.0,
-        "mean": 15530.6,
-        "n": 42,
+        "mean": 15458.91,
+        "n": 47,
         "whisker_lower": 3697.0,
-        "whisker_upper": 20534.0,
+        "whisker_upper": 23960.0,
         "outliers": [
           26608.0,
           29366.0,
@@ -91,7 +97,9 @@
         5821.0,
         7681.0,
         8137.0,
+        9269.0,
         9378.0,
+        9446.0,
         9953.0,
         10263.0,
         10486.0,
@@ -103,6 +111,7 @@
         12054.0,
         12333.0,
         12410.0,
+        12492.0,
         12680.0,
         12834.0,
         13442.0,
@@ -124,7 +133,9 @@
         17877.0,
         17937.0,
         19009.0,
+        19117.0,
         20534.0,
+        23960.0,
         26608.0,
         29366.0,
         83246.0
@@ -133,16 +144,17 @@
     "Tuesday": {
       "stats": {
         "min": 2980.0,
-        "q1": 13038.0,
-        "median": 15548.0,
-        "q3": 19144.5,
+        "q1": 12927.75,
+        "median": 15423.0,
+        "q3": 19347.0,
         "max": 88645.0,
-        "mean": 17940.37,
-        "n": 43,
+        "mean": 17877.81,
+        "n": 48,
         "whisker_lower": 8119.0,
         "whisker_upper": 25994.0,
         "outliers": [
           2980.0,
+          29660.0,
           43433.0,
           88645.0
         ]
@@ -150,6 +162,7 @@
       "values": [
         2980.0,
         8119.0,
+        8558.0,
         8799.0,
         9226.0,
         10005.0,
@@ -158,11 +171,13 @@
         10539.0,
         10981.0,
         11820.0,
+        12837.0,
         12958.0,
         13118.0,
         13191.0,
         13501.0,
         13878.0,
+        13905.0,
         14086.0,
         14224.0,
         14322.0,
@@ -185,24 +200,26 @@
         20013.0,
         20892.0,
         21456.0,
+        21739.0,
         23260.0,
         24760.0,
         25221.0,
         25994.0,
+        29660.0,
         43433.0,
         88645.0
       ]
     },
     "Wednesday": {
       "stats": {
-        "min": 8880.0,
-        "q1": 15171.0,
-        "median": 17964.0,
-        "q3": 21610.5,
+        "min": 6152.0,
+        "q1": 15126.0,
+        "median": 17355.0,
+        "q3": 21382.0,
         "max": 115832.0,
-        "mean": 21574.02,
-        "n": 43,
-        "whisker_lower": 8880.0,
+        "mean": 20939.68,
+        "n": 47,
+        "whisker_lower": 6152.0,
         "whisker_upper": 25951.0,
         "outliers": [
           34070.0,
@@ -213,6 +230,7 @@
         ]
       },
       "values": [
+        6152.0,
         8880.0,
         9589.0,
         9750.0,
@@ -224,6 +242,7 @@
         14841.0,
         14870.0,
         15071.0,
+        15181.0,
         15271.0,
         15322.0,
         16108.0,
@@ -234,6 +253,8 @@
         17289.0,
         17306.0,
         17322.0,
+        17355.0,
+        17794.0,
         17964.0,
         17967.0,
         18177.0,
@@ -262,14 +283,15 @@
       "stats": {
         "min": 6916.0,
         "q1": 14297.75,
-        "median": 17585.5,
-        "q3": 23005.5,
+        "median": 17310.5,
+        "q3": 22144.75,
         "max": 75354.0,
-        "mean": 22205.91,
-        "n": 44,
+        "mean": 21614.31,
+        "n": 48,
         "whisker_lower": 6916.0,
-        "whisker_upper": 35085.0,
+        "whisker_upper": 26230.0,
         "outliers": [
+          35085.0,
           36272.0,
           39978.0,
           72423.0,
@@ -280,6 +302,7 @@
       "values": [
         6916.0,
         8763.0,
+        8996.0,
         9661.0,
         10640.0,
         12015.0,
@@ -295,6 +318,8 @@
         14749.0,
         14882.0,
         15294.0,
+        15798.0,
+        16194.0,
         16223.0,
         16595.0,
         16601.0,
@@ -305,6 +330,7 @@
         19169.0,
         19198.0,
         19295.0,
+        19439.0,
         20098.0,
         20985.0,
         21156.0,
@@ -327,16 +353,15 @@
     "Friday": {
       "stats": {
         "min": 6950.0,
-        "q1": 16404.0,
-        "median": 20262.5,
-        "q3": 25404.0,
+        "q1": 16613.25,
+        "median": 20961.5,
+        "q3": 26332.25,
         "max": 48590.0,
-        "mean": 21714.66,
-        "n": 44,
+        "mean": 22177.81,
+        "n": 48,
         "whisker_lower": 6950.0,
-        "whisker_upper": 38658.0,
+        "whisker_upper": 39513.0,
         "outliers": [
-          39513.0,
           48590.0
         ]
       },
@@ -368,6 +393,7 @@
         21168.0,
         21458.0,
         21820.0,
+        23490.0,
         23629.0,
         23770.0,
         23780.0,
@@ -377,9 +403,12 @@
         26268.0,
         26295.0,
         26444.0,
+        26793.0,
         26864.0,
+        28229.0,
         28373.0,
         28547.0,
+        30578.0,
         30607.0,
         36060.0,
         38658.0,
@@ -390,12 +419,12 @@
     "Saturday": {
       "stats": {
         "min": 8707.0,
-        "q1": 23664.25,
-        "median": 29486.5,
-        "q3": 33418.0,
+        "q1": 23578.25,
+        "median": 29238.0,
+        "q3": 32844.25,
         "max": 81921.0,
-        "mean": 29734.41,
-        "n": 44,
+        "mean": 29418.94,
+        "n": 48,
         "whisker_lower": 15402.0,
         "whisker_upper": 46647.0,
         "outliers": [
@@ -407,12 +436,14 @@
         8707.0,
         15402.0,
         15715.0,
+        19611.0,
         20347.0,
         20652.0,
         22406.0,
         22647.0,
         22976.0,
         23046.0,
+        23271.0,
         23462.0,
         23617.0,
         23680.0,
@@ -425,6 +456,7 @@
         28468.0,
         28864.0,
         29127.0,
+        29208.0,
         29268.0,
         29705.0,
         30023.0,
@@ -433,6 +465,7 @@
         30487.0,
         31018.0,
         31108.0,
+        31705.0,
         32031.0,
         32159.0,
         32694.0,
@@ -452,20 +485,21 @@
     },
     "Sunday": {
       "stats": {
-        "min": 15422.0,
-        "q1": 22902.0,
-        "median": 29246.0,
-        "q3": 39667.0,
+        "min": 10104.0,
+        "q1": 22935.0,
+        "median": 28430.5,
+        "q3": 39452.25,
         "max": 91992.0,
-        "mean": 32735.28,
-        "n": 43,
-        "whisker_lower": 15422.0,
+        "mean": 32175.4,
+        "n": 48,
+        "whisker_lower": 10104.0,
         "whisker_upper": 59006.0,
         "outliers": [
           91992.0
         ]
       },
       "values": [
+        10104.0,
         15422.0,
         15588.0,
         18676.0,
@@ -479,8 +513,10 @@
         22836.0,
         22968.0,
         23565.0,
+        23961.0,
         24048.0,
         24376.0,
+        25969.0,
         26746.0,
         26998.0,
         27046.0,
@@ -496,8 +532,10 @@
         33746.0,
         33758.0,
         34899.0,
+        36865.0,
         37349.0,
         39302.0,
+        39903.0,
         40032.0,
         40659.0,
         40965.0,
@@ -515,9 +553,9 @@
   "top_items": [
     {
       "name": "Cappuccino",
-      "total_count": 900,
-      "avg_per_month": 90.0,
-      "avg_order_value": 944.45,
+      "total_count": 980,
+      "avg_per_month": 89.1,
+      "avg_order_value": 956.47,
       "monthly": {
         "May 2025": 75,
         "Jun 2025": 88,
@@ -528,14 +566,15 @@
         "Nov 2025": 84,
         "Dec 2025": 85,
         "Jan 2026": 119,
-        "Feb 2026": 82
+        "Feb 2026": 82,
+        "Mar 2026": 80
       }
     },
     {
       "name": "Americano (Standard)",
-      "total_count": 391,
-      "avg_per_month": 39.1,
-      "avg_order_value": 820.63,
+      "total_count": 463,
+      "avg_per_month": 42.1,
+      "avg_order_value": 824.31,
       "monthly": {
         "May 2025": 0,
         "Jun 2025": 0,
@@ -546,13 +585,33 @@
         "Nov 2025": 61,
         "Dec 2025": 66,
         "Jan 2026": 100,
-        "Feb 2026": 80
+        "Feb 2026": 80,
+        "Mar 2026": 72
+      }
+    },
+    {
+      "name": "Hazelnut Cappuccino",
+      "total_count": 381,
+      "avg_per_month": 34.6,
+      "avg_order_value": 1021.0,
+      "monthly": {
+        "May 2025": 30,
+        "Jun 2025": 24,
+        "Jul 2025": 30,
+        "Aug 2025": 31,
+        "Sep 2025": 35,
+        "Oct 2025": 48,
+        "Nov 2025": 36,
+        "Dec 2025": 41,
+        "Jan 2026": 57,
+        "Feb 2026": 24,
+        "Mar 2026": 25
       }
     },
     {
       "name": "Americano",
       "total_count": 368,
-      "avg_per_month": 36.8,
+      "avg_per_month": 33.5,
       "avg_order_value": 831.86,
       "monthly": {
         "May 2025": 48,
@@ -564,32 +623,15 @@
         "Nov 2025": 0,
         "Dec 2025": 0,
         "Jan 2026": 0,
-        "Feb 2026": 0
-      }
-    },
-    {
-      "name": "Hazelnut Cappuccino",
-      "total_count": 356,
-      "avg_per_month": 35.6,
-      "avg_order_value": 1030.72,
-      "monthly": {
-        "May 2025": 30,
-        "Jun 2025": 24,
-        "Jul 2025": 30,
-        "Aug 2025": 31,
-        "Sep 2025": 35,
-        "Oct 2025": 48,
-        "Nov 2025": 36,
-        "Dec 2025": 41,
-        "Jan 2026": 57,
-        "Feb 2026": 24
+        "Feb 2026": 0,
+        "Mar 2026": 0
       }
     },
     {
       "name": "Cafe Frappe",
-      "total_count": 332,
-      "avg_per_month": 33.2,
-      "avg_order_value": 1077.37,
+      "total_count": 363,
+      "avg_per_month": 33.0,
+      "avg_order_value": 1078.79,
       "monthly": {
         "May 2025": 47,
         "Jun 2025": 45,
@@ -600,14 +642,15 @@
         "Nov 2025": 17,
         "Dec 2025": 14,
         "Jan 2026": 26,
-        "Feb 2026": 24
+        "Feb 2026": 24,
+        "Mar 2026": 31
       }
     },
     {
       "name": "Tiramisu",
-      "total_count": 328,
-      "avg_per_month": 32.8,
-      "avg_order_value": 1841.1,
+      "total_count": 351,
+      "avg_per_month": 31.9,
+      "avg_order_value": 1814.73,
       "monthly": {
         "May 2025": 9,
         "Jun 2025": 21,
@@ -618,14 +661,15 @@
         "Nov 2025": 28,
         "Dec 2025": 44,
         "Jan 2026": 28,
-        "Feb 2026": 22
+        "Feb 2026": 22,
+        "Mar 2026": 23
       }
     },
     {
       "name": "Dry Chilli Chicken",
-      "total_count": 312,
-      "avg_per_month": 31.2,
-      "avg_order_value": 1581.71,
+      "total_count": 337,
+      "avg_per_month": 30.6,
+      "avg_order_value": 1567.59,
       "monthly": {
         "May 2025": 41,
         "Jun 2025": 35,
@@ -636,14 +680,15 @@
         "Nov 2025": 23,
         "Dec 2025": 31,
         "Jan 2026": 37,
-        "Feb 2026": 19
+        "Feb 2026": 19,
+        "Mar 2026": 25
       }
     },
     {
       "name": "Fresh Lime Soda",
-      "total_count": 306,
-      "avg_per_month": 30.6,
-      "avg_order_value": 1945.9,
+      "total_count": 336,
+      "avg_per_month": 30.5,
+      "avg_order_value": 1953.26,
       "monthly": {
         "May 2025": 20,
         "Jun 2025": 29,
@@ -654,14 +699,15 @@
         "Nov 2025": 21,
         "Dec 2025": 29,
         "Jan 2026": 20,
-        "Feb 2026": 24
+        "Feb 2026": 24,
+        "Mar 2026": 30
       }
     },
     {
       "name": "Tempura Prawn",
-      "total_count": 265,
-      "avg_per_month": 26.5,
-      "avg_order_value": 1895.8,
+      "total_count": 290,
+      "avg_per_month": 26.4,
+      "avg_order_value": 1921.49,
       "monthly": {
         "May 2025": 0,
         "Jun 2025": 12,
@@ -672,14 +718,15 @@
         "Nov 2025": 14,
         "Dec 2025": 26,
         "Jan 2026": 28,
-        "Feb 2026": 21
+        "Feb 2026": 21,
+        "Mar 2026": 25
       }
     },
     {
       "name": "French Fries",
-      "total_count": 258,
-      "avg_per_month": 25.8,
-      "avg_order_value": 1150.77,
+      "total_count": 285,
+      "avg_per_month": 25.9,
+      "avg_order_value": 1151.88,
       "monthly": {
         "May 2025": 13,
         "Jun 2025": 15,
@@ -690,32 +737,15 @@
         "Nov 2025": 21,
         "Dec 2025": 28,
         "Jan 2026": 40,
-        "Feb 2026": 21
-      }
-    },
-    {
-      "name": "Cheese Garlic Bread",
-      "total_count": 254,
-      "avg_per_month": 25.4,
-      "avg_order_value": 968.0,
-      "monthly": {
-        "May 2025": 22,
-        "Jun 2025": 16,
-        "Jul 2025": 24,
-        "Aug 2025": 28,
-        "Sep 2025": 38,
-        "Oct 2025": 33,
-        "Nov 2025": 19,
-        "Dec 2025": 24,
-        "Jan 2026": 24,
-        "Feb 2026": 26
+        "Feb 2026": 21,
+        "Mar 2026": 27
       }
     },
     {
       "name": "Fish Finger 6 Pcs Basa",
-      "total_count": 254,
-      "avg_per_month": 25.4,
-      "avg_order_value": 1345.72,
+      "total_count": 277,
+      "avg_per_month": 25.2,
+      "avg_order_value": 1350.22,
       "monthly": {
         "May 2025": 35,
         "Jun 2025": 21,
@@ -726,68 +756,15 @@
         "Nov 2025": 23,
         "Dec 2025": 16,
         "Jan 2026": 28,
-        "Feb 2026": 12
-      }
-    },
-    {
-      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
-      "total_count": 250,
-      "avg_per_month": 25.0,
-      "avg_order_value": 1395.32,
-      "monthly": {
-        "May 2025": 22,
-        "Jun 2025": 25,
-        "Jul 2025": 31,
-        "Aug 2025": 20,
-        "Sep 2025": 44,
-        "Oct 2025": 33,
-        "Nov 2025": 15,
-        "Dec 2025": 20,
-        "Jan 2026": 21,
-        "Feb 2026": 19
-      }
-    },
-    {
-      "name": "Creme Brulee",
-      "total_count": 250,
-      "avg_per_month": 25.0,
-      "avg_order_value": 1945.59,
-      "monthly": {
-        "May 2025": 9,
-        "Jun 2025": 34,
-        "Jul 2025": 31,
-        "Aug 2025": 27,
-        "Sep 2025": 32,
-        "Oct 2025": 31,
-        "Nov 2025": 17,
-        "Dec 2025": 38,
-        "Jan 2026": 20,
-        "Feb 2026": 11
-      }
-    },
-    {
-      "name": "Hot Choco Latte",
-      "total_count": 244,
-      "avg_per_month": 24.4,
-      "avg_order_value": 1085.91,
-      "monthly": {
-        "May 2025": 12,
-        "Jun 2025": 15,
-        "Jul 2025": 21,
-        "Aug 2025": 12,
-        "Sep 2025": 20,
-        "Oct 2025": 22,
-        "Nov 2025": 19,
-        "Dec 2025": 61,
-        "Jan 2026": 41,
-        "Feb 2026": 21
+        "Feb 2026": 12,
+        "Mar 2026": 23
       }
     },
     {
       "name": "NSA STG Tea Darjeeling Tea 1st Flush",
-      "total_count": 227,
-      "avg_per_month": 22.7,
-      "avg_order_value": 920.73,
+      "total_count": 275,
+      "avg_per_month": 25.0,
+      "avg_order_value": 969.71,
       "monthly": {
         "May 2025": 0,
         "Jun 2025": 0,
@@ -798,13 +775,147 @@
         "Nov 2025": 36,
         "Dec 2025": 41,
         "Jan 2026": 74,
-        "Feb 2026": 38
+        "Feb 2026": 38,
+        "Mar 2026": 48
+      }
+    },
+    {
+      "name": "Cheese Garlic Bread",
+      "total_count": 274,
+      "avg_per_month": 24.9,
+      "avg_order_value": 965.38,
+      "monthly": {
+        "May 2025": 22,
+        "Jun 2025": 16,
+        "Jul 2025": 24,
+        "Aug 2025": 28,
+        "Sep 2025": 38,
+        "Oct 2025": 33,
+        "Nov 2025": 19,
+        "Dec 2025": 24,
+        "Jan 2026": 24,
+        "Feb 2026": 26,
+        "Mar 2026": 20
+      }
+    },
+    {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "total_count": 266,
+      "avg_per_month": 24.2,
+      "avg_order_value": 1402.7,
+      "monthly": {
+        "May 2025": 22,
+        "Jun 2025": 25,
+        "Jul 2025": 31,
+        "Aug 2025": 20,
+        "Sep 2025": 44,
+        "Oct 2025": 33,
+        "Nov 2025": 15,
+        "Dec 2025": 20,
+        "Jan 2026": 21,
+        "Feb 2026": 19,
+        "Mar 2026": 16
+      }
+    },
+    {
+      "name": "Creme Brulee",
+      "total_count": 264,
+      "avg_per_month": 24.0,
+      "avg_order_value": 1953.94,
+      "monthly": {
+        "May 2025": 9,
+        "Jun 2025": 34,
+        "Jul 2025": 31,
+        "Aug 2025": 27,
+        "Sep 2025": 32,
+        "Oct 2025": 31,
+        "Nov 2025": 17,
+        "Dec 2025": 38,
+        "Jan 2026": 20,
+        "Feb 2026": 11,
+        "Mar 2026": 14
+      }
+    },
+    {
+      "name": "Hot Choco Latte",
+      "total_count": 255,
+      "avg_per_month": 23.2,
+      "avg_order_value": 1085.64,
+      "monthly": {
+        "May 2025": 12,
+        "Jun 2025": 15,
+        "Jul 2025": 21,
+        "Aug 2025": 12,
+        "Sep 2025": 20,
+        "Oct 2025": 22,
+        "Nov 2025": 19,
+        "Dec 2025": 61,
+        "Jan 2026": 41,
+        "Feb 2026": 21,
+        "Mar 2026": 11
+      }
+    },
+    {
+      "name": "Hazelnut Frappe",
+      "total_count": 226,
+      "avg_per_month": 20.5,
+      "avg_order_value": 1220.96,
+      "monthly": {
+        "May 2025": 25,
+        "Jun 2025": 19,
+        "Jul 2025": 27,
+        "Aug 2025": 20,
+        "Sep 2025": 27,
+        "Oct 2025": 27,
+        "Nov 2025": 11,
+        "Dec 2025": 23,
+        "Jan 2026": 11,
+        "Feb 2026": 19,
+        "Mar 2026": 17
+      }
+    },
+    {
+      "name": "Grilled Chicken Steak In Mushroom Sauce",
+      "total_count": 224,
+      "avg_per_month": 20.4,
+      "avg_order_value": 1474.85,
+      "monthly": {
+        "May 2025": 8,
+        "Jun 2025": 17,
+        "Jul 2025": 17,
+        "Aug 2025": 27,
+        "Sep 2025": 15,
+        "Oct 2025": 20,
+        "Nov 2025": 19,
+        "Dec 2025": 35,
+        "Jan 2026": 26,
+        "Feb 2026": 15,
+        "Mar 2026": 25
+      }
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "total_count": 217,
+      "avg_per_month": 19.7,
+      "avg_order_value": 1264.98,
+      "monthly": {
+        "May 2025": 14,
+        "Jun 2025": 20,
+        "Jul 2025": 17,
+        "Aug 2025": 8,
+        "Sep 2025": 27,
+        "Oct 2025": 30,
+        "Nov 2025": 15,
+        "Dec 2025": 24,
+        "Jan 2026": 25,
+        "Feb 2026": 16,
+        "Mar 2026": 21
       }
     },
     {
       "name": "Darjeeling Tea 1St Flush",
       "total_count": 214,
-      "avg_per_month": 21.4,
+      "avg_per_month": 19.5,
       "avg_order_value": 1076.77,
       "monthly": {
         "May 2025": 27,
@@ -816,140 +927,101 @@
         "Nov 2025": 0,
         "Dec 2025": 0,
         "Jan 2026": 0,
-        "Feb 2026": 0
-      }
-    },
-    {
-      "name": "Hazelnut Frappe",
-      "total_count": 209,
-      "avg_per_month": 20.9,
-      "avg_order_value": 1229.64,
-      "monthly": {
-        "May 2025": 25,
-        "Jun 2025": 19,
-        "Jul 2025": 27,
-        "Aug 2025": 20,
-        "Sep 2025": 27,
-        "Oct 2025": 27,
-        "Nov 2025": 11,
-        "Dec 2025": 23,
-        "Jan 2026": 11,
-        "Feb 2026": 19
-      }
-    },
-    {
-      "name": "Grilled Chicken Steak In Mushroom Sauce",
-      "total_count": 199,
-      "avg_per_month": 19.9,
-      "avg_order_value": 1474.2,
-      "monthly": {
-        "May 2025": 8,
-        "Jun 2025": 17,
-        "Jul 2025": 17,
-        "Aug 2025": 27,
-        "Sep 2025": 15,
-        "Oct 2025": 20,
-        "Nov 2025": 19,
-        "Dec 2025": 35,
-        "Jan 2026": 26,
-        "Feb 2026": 15
-      }
-    },
-    {
-      "name": "Orange Mojito",
-      "total_count": 197,
-      "avg_per_month": 19.7,
-      "avg_order_value": 1656.6,
-      "monthly": {
-        "May 2025": 19,
-        "Jun 2025": 24,
-        "Jul 2025": 21,
-        "Aug 2025": 20,
-        "Sep 2025": 41,
-        "Oct 2025": 28,
-        "Nov 2025": 10,
-        "Dec 2025": 8,
-        "Jan 2026": 13,
-        "Feb 2026": 13
+        "Feb 2026": 0,
+        "Mar 2026": 0
       }
     }
   ],
   "top_items_by_revenue": [
     {
       "name": "Cappuccino",
-      "qty": 1262.0,
-      "revenue": 164780.0,
-      "avg_price": 130.57,
+      "qty": 1384.0,
+      "revenue": 180640.0,
+      "avg_price": 130.52,
       "category": "Coffee"
     },
     {
       "name": "Grilled Bhetki In Lemon Butter Sauce",
-      "qty": 190.0,
-      "revenue": 104050.0,
-      "avg_price": 547.63,
+      "qty": 210.0,
+      "revenue": 115650.0,
+      "avg_price": 550.71,
       "category": "Big Eats"
     },
     {
       "name": "Dry Chilli Chicken",
-      "qty": 364.0,
-      "revenue": 101850.0,
-      "avg_price": 279.81,
+      "qty": 392.0,
+      "revenue": 110250.0,
+      "avg_price": 281.25,
       "category": "Small Eats"
-    },
-    {
-      "name": "Tiramisu",
-      "qty": 374.0,
-      "revenue": 98680.0,
-      "avg_price": 263.85,
-      "category": "Dessert"
     },
     {
       "name": "Bhetki Fish N Chips",
-      "qty": 187.0,
-      "revenue": 98150.0,
-      "avg_price": 524.87,
+      "qty": 204.0,
+      "revenue": 106990.0,
+      "avg_price": 524.46,
       "category": "Big Eats"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 401.0,
+      "revenue": 105700.0,
+      "avg_price": 263.59,
+      "category": "Dessert"
     },
     {
       "name": "Fish Finger 6 Pcs Bhetki",
-      "qty": 192.0,
-      "revenue": 84340.0,
-      "avg_price": 439.27,
+      "qty": 213.0,
+      "revenue": 93790.0,
+      "avg_price": 440.33,
       "category": "Small Eats"
-    },
-    {
-      "name": "Mutton Chop Sizzler",
-      "qty": 155.0,
-      "revenue": 82550.0,
-      "avg_price": 532.58,
-      "category": "SIZZLER"
     },
     {
       "name": "Grilled Chicken Steak In Mushroom Sauce",
-      "qty": 213.0,
-      "revenue": 80310.0,
-      "avg_price": 377.04,
+      "qty": 241.0,
+      "revenue": 91230.0,
+      "avg_price": 378.55,
       "category": "Steaks"
     },
     {
-      "name": "Fish Finger 6 Pcs Basa",
-      "qty": 288.0,
-      "revenue": 77280.0,
-      "avg_price": 268.33,
-      "category": "Small Eats"
+      "name": "Americano (Standard)",
+      "qty": 653.0,
+      "revenue": 85310.0,
+      "avg_price": 130.64,
+      "category": "Coffee"
     },
     {
       "name": "Basa Fish N Chips",
-      "qty": 231.0,
-      "revenue": 75950.0,
-      "avg_price": 328.79,
+      "qty": 260.0,
+      "revenue": 85230.0,
+      "avg_price": 327.81,
       "category": "Big Eats"
     },
     {
+      "name": "Mutton Chop Sizzler",
+      "qty": 159.0,
+      "revenue": 84910.0,
+      "avg_price": 534.03,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 315.0,
+      "revenue": 84840.0,
+      "avg_price": 269.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Fresh Lime Soda",
+      "qty": 533.0,
+      "revenue": 79000.0,
+      "avg_price": 148.22,
+      "category": "Mocktails"
+    },
+    {
       "name": "Creme Brulee",
-      "qty": 286.0,
-      "revenue": 75050.0,
-      "avg_price": 262.41,
+      "qty": 301.0,
+      "revenue": 78950.0,
+      "avg_price": 262.29,
       "category": "Dessert"
     },
     {
@@ -960,60 +1032,46 @@
       "category": "Steaks"
     },
     {
-      "name": "Americano (Standard)",
-      "qty": 548.0,
-      "revenue": 71660.0,
-      "avg_price": 130.77,
-      "category": "Coffee"
-    },
-    {
-      "name": "Fresh Lime Soda",
-      "qty": 474.0,
-      "revenue": 70150.0,
-      "avg_price": 148.0,
-      "category": "Mocktails"
-    },
-    {
-      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
-      "qty": 261.0,
-      "revenue": 69360.0,
-      "avg_price": 265.75,
-      "category": "Small Eats"
-    },
-    {
       "name": "Cafe Frappe",
-      "qty": 391.0,
-      "revenue": 65940.0,
-      "avg_price": 168.64,
+      "qty": 434.0,
+      "revenue": 73680.0,
+      "avg_price": 169.77,
       "category": "Cold Coffee And Brews"
     },
     {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 277.0,
+      "revenue": 73520.0,
+      "avg_price": 265.42,
+      "category": "Small Eats"
+    },
+    {
       "name": "Tempura Prawn",
-      "qty": 163.0,
-      "revenue": 61690.0,
-      "avg_price": 378.47,
+      "qty": 189.0,
+      "revenue": 71050.0,
+      "avg_price": 375.93,
       "category": "Small Eats"
-    },
-    {
-      "name": "Tempura Prawn Served With Assorted Dips",
-      "qty": 176.0,
-      "revenue": 61600.0,
-      "avg_price": 350.0,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Grilled Chicken Sizzler",
-      "qty": 150.0,
-      "revenue": 60690.0,
-      "avg_price": 404.6,
-      "category": "SIZZLER"
     },
     {
       "name": "Cream Of Chicken",
-      "qty": 212.0,
-      "revenue": 60200.0,
-      "avg_price": 283.96,
+      "qty": 230.0,
+      "revenue": 65240.0,
+      "avg_price": 283.65,
       "category": "Soup"
+    },
+    {
+      "name": "Grilled Chicken Sizzler",
+      "qty": 160.0,
+      "revenue": 64890.0,
+      "avg_price": 405.56,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Chicken Satay With Peanut Butter Sauce",
+      "qty": 224.0,
+      "revenue": 63470.0,
+      "avg_price": 283.35,
+      "category": "Small Eats"
     }
   ],
   "top_items_by_qty": [
@@ -1026,17 +1084,24 @@
     },
     {
       "name": "Cappuccino",
-      "qty": 1262.0,
-      "revenue": 164780.0,
-      "avg_price": 130.57,
+      "qty": 1384.0,
+      "revenue": 180640.0,
+      "avg_price": 130.52,
       "category": "Coffee"
     },
     {
       "name": "Americano (Standard)",
-      "qty": 548.0,
-      "revenue": 71660.0,
-      "avg_price": 130.77,
+      "qty": 653.0,
+      "revenue": 85310.0,
+      "avg_price": 130.64,
       "category": "Coffee"
+    },
+    {
+      "name": "Fresh Lime Soda",
+      "qty": 533.0,
+      "revenue": 79000.0,
+      "avg_price": 148.22,
+      "category": "Mocktails"
     },
     {
       "name": "Americano",
@@ -1046,46 +1111,60 @@
       "category": "Coffee"
     },
     {
-      "name": "Fresh Lime Soda",
-      "qty": 474.0,
-      "revenue": 70150.0,
-      "avg_price": 148.0,
-      "category": "Mocktails"
-    },
-    {
       "name": "Hazelnut Cappuccino",
-      "qty": 444.0,
-      "revenue": 58020.0,
-      "avg_price": 130.68,
+      "qty": 479.0,
+      "revenue": 62570.0,
+      "avg_price": 130.63,
       "category": "Coffee"
     },
     {
       "name": "Cafe Frappe",
-      "qty": 391.0,
-      "revenue": 65940.0,
-      "avg_price": 168.64,
+      "qty": 434.0,
+      "revenue": 73680.0,
+      "avg_price": 169.77,
       "category": "Cold Coffee And Brews"
     },
     {
       "name": "Tiramisu",
-      "qty": 374.0,
-      "revenue": 98680.0,
-      "avg_price": 263.85,
+      "qty": 401.0,
+      "revenue": 105700.0,
+      "avg_price": 263.59,
       "category": "Dessert"
     },
     {
       "name": "Dry Chilli Chicken",
-      "qty": 364.0,
-      "revenue": 101850.0,
-      "avg_price": 279.81,
+      "qty": 392.0,
+      "revenue": 110250.0,
+      "avg_price": 281.25,
       "category": "Small Eats"
     },
     {
       "name": "NSA STG Tea Darjeeling Tea 1st Flush",
-      "qty": 324.0,
-      "revenue": 45360.0,
+      "qty": 383.0,
+      "revenue": 53620.0,
       "avg_price": 140.0,
       "category": "Tea"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 315.0,
+      "revenue": 84840.0,
+      "avg_price": 269.33,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Creme Brulee",
+      "qty": 301.0,
+      "revenue": 78950.0,
+      "avg_price": 262.29,
+      "category": "Dessert"
+    },
+    {
+      "name": "French Fries",
+      "qty": 295.0,
+      "revenue": 42250.0,
+      "avg_price": 143.22,
+      "category": "Small Eats"
     },
     {
       "name": "Darjeeling Tea 1St Flush",
@@ -1095,138 +1174,117 @@
       "category": "Tea"
     },
     {
-      "name": "Fish Finger 6 Pcs Basa",
-      "qty": 288.0,
-      "revenue": 77280.0,
-      "avg_price": 268.33,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Creme Brulee",
-      "qty": 286.0,
-      "revenue": 75050.0,
-      "avg_price": 262.41,
-      "category": "Dessert"
-    },
-    {
       "name": "Hot Choco Latte",
-      "qty": 271.0,
-      "revenue": 35380.0,
-      "avg_price": 130.55,
+      "qty": 286.0,
+      "revenue": 37330.0,
+      "avg_price": 130.52,
       "category": "Coffee"
     },
     {
-      "name": "French Fries",
-      "qty": 266.0,
-      "revenue": 38190.0,
-      "avg_price": 143.57,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
-      "qty": 261.0,
-      "revenue": 69360.0,
-      "avg_price": 265.75,
-      "category": "Small Eats"
-    },
-    {
       "name": "Cheese Garlic Bread",
-      "qty": 258.5,
-      "revenue": 43415.0,
-      "avg_price": 167.95,
+      "qty": 279.5,
+      "revenue": 46985.0,
+      "avg_price": 168.1,
       "category": "Toasted"
     },
     {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 277.0,
+      "revenue": 73520.0,
+      "avg_price": 265.42,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Basa Fish N Chips",
+      "qty": 260.0,
+      "revenue": 85230.0,
+      "avg_price": 327.81,
+      "category": "Big Eats"
+    },
+    {
       "name": "Hazelnut Frappe",
-      "qty": 242.0,
-      "revenue": 45650.0,
-      "avg_price": 188.64,
+      "qty": 259.0,
+      "revenue": 48710.0,
+      "avg_price": 188.07,
       "category": "Cold Coffee And Brews"
     },
     {
       "name": "Orange Mojito",
-      "qty": 239.0,
-      "revenue": 41610.0,
-      "avg_price": 174.1,
+      "qty": 257.0,
+      "revenue": 44850.0,
+      "avg_price": 174.51,
       "category": "Mojito"
-    },
-    {
-      "name": "Basa Fish N Chips",
-      "qty": 231.0,
-      "revenue": 75950.0,
-      "avg_price": 328.79,
-      "category": "Big Eats"
     }
   ],
   "top_food_by_revenue": [
     {
       "name": "Grilled Bhetki In Lemon Butter Sauce",
-      "qty": 190.0,
-      "revenue": 104050.0,
-      "avg_price": 547.63,
+      "qty": 210.0,
+      "revenue": 115650.0,
+      "avg_price": 550.71,
       "category": "Big Eats"
     },
     {
       "name": "Dry Chilli Chicken",
-      "qty": 364.0,
-      "revenue": 101850.0,
-      "avg_price": 279.81,
+      "qty": 392.0,
+      "revenue": 110250.0,
+      "avg_price": 281.25,
       "category": "Small Eats"
-    },
-    {
-      "name": "Tiramisu",
-      "qty": 374.0,
-      "revenue": 98680.0,
-      "avg_price": 263.85,
-      "category": "Dessert"
     },
     {
       "name": "Bhetki Fish N Chips",
-      "qty": 187.0,
-      "revenue": 98150.0,
-      "avg_price": 524.87,
+      "qty": 204.0,
+      "revenue": 106990.0,
+      "avg_price": 524.46,
       "category": "Big Eats"
+    },
+    {
+      "name": "Tiramisu",
+      "qty": 401.0,
+      "revenue": 105700.0,
+      "avg_price": 263.59,
+      "category": "Dessert"
     },
     {
       "name": "Fish Finger 6 Pcs Bhetki",
-      "qty": 192.0,
-      "revenue": 84340.0,
-      "avg_price": 439.27,
+      "qty": 213.0,
+      "revenue": 93790.0,
+      "avg_price": 440.33,
       "category": "Small Eats"
-    },
-    {
-      "name": "Mutton Chop Sizzler",
-      "qty": 155.0,
-      "revenue": 82550.0,
-      "avg_price": 532.58,
-      "category": "SIZZLER"
     },
     {
       "name": "Grilled Chicken Steak In Mushroom Sauce",
-      "qty": 213.0,
-      "revenue": 80310.0,
-      "avg_price": 377.04,
+      "qty": 241.0,
+      "revenue": 91230.0,
+      "avg_price": 378.55,
       "category": "Steaks"
     },
     {
-      "name": "Fish Finger 6 Pcs Basa",
-      "qty": 288.0,
-      "revenue": 77280.0,
-      "avg_price": 268.33,
-      "category": "Small Eats"
-    },
-    {
       "name": "Basa Fish N Chips",
-      "qty": 231.0,
-      "revenue": 75950.0,
-      "avg_price": 328.79,
+      "qty": 260.0,
+      "revenue": 85230.0,
+      "avg_price": 327.81,
       "category": "Big Eats"
     },
     {
+      "name": "Mutton Chop Sizzler",
+      "qty": 159.0,
+      "revenue": 84910.0,
+      "avg_price": 534.03,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Fish Finger 6 Pcs Basa",
+      "qty": 315.0,
+      "revenue": 84840.0,
+      "avg_price": 269.33,
+      "category": "Small Eats"
+    },
+    {
       "name": "Creme Brulee",
-      "qty": 286.0,
-      "revenue": 75050.0,
-      "avg_price": 262.41,
+      "qty": 301.0,
+      "revenue": 78950.0,
+      "avg_price": 262.29,
       "category": "Dessert"
     },
     {
@@ -1238,16 +1296,37 @@
     },
     {
       "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
-      "qty": 261.0,
-      "revenue": 69360.0,
-      "avg_price": 265.75,
+      "qty": 277.0,
+      "revenue": 73520.0,
+      "avg_price": 265.42,
       "category": "Small Eats"
     },
     {
       "name": "Tempura Prawn",
-      "qty": 163.0,
-      "revenue": 61690.0,
-      "avg_price": 378.47,
+      "qty": 189.0,
+      "revenue": 71050.0,
+      "avg_price": 375.93,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Cream Of Chicken",
+      "qty": 230.0,
+      "revenue": 65240.0,
+      "avg_price": 283.65,
+      "category": "Soup"
+    },
+    {
+      "name": "Grilled Chicken Sizzler",
+      "qty": 160.0,
+      "revenue": 64890.0,
+      "avg_price": 405.56,
+      "category": "SIZZLER"
+    },
+    {
+      "name": "Chicken Satay With Peanut Butter Sauce",
+      "qty": 224.0,
+      "revenue": 63470.0,
+      "avg_price": 283.35,
       "category": "Small Eats"
     },
     {
@@ -1258,45 +1337,24 @@
       "category": "Small Eats"
     },
     {
-      "name": "Grilled Chicken Sizzler",
-      "qty": 150.0,
-      "revenue": 60690.0,
-      "avg_price": 404.6,
-      "category": "SIZZLER"
-    },
-    {
-      "name": "Cream Of Chicken",
-      "qty": 212.0,
-      "revenue": 60200.0,
-      "avg_price": 283.96,
-      "category": "Soup"
-    },
-    {
-      "name": "Chicken Satay With Peanut Butter Sauce",
-      "qty": 213.0,
-      "revenue": 60170.0,
-      "avg_price": 282.49,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Smoked Chicken Sizzler",
-      "qty": 138.0,
-      "revenue": 54840.0,
-      "avg_price": 397.39,
-      "category": "SIZZLER"
+      "name": "Double Chicken Steak In Mushroom Sauce",
+      "qty": 140.0,
+      "revenue": 59800.0,
+      "avg_price": 427.14,
+      "category": "Steaks"
     },
     {
       "name": "Chicken Cheese Ball",
-      "qty": 167.0,
-      "revenue": 54050.0,
-      "avg_price": 323.65,
+      "qty": 178.0,
+      "revenue": 57680.0,
+      "avg_price": 324.04,
       "category": "Small Eats"
     },
     {
-      "name": "Double Chicken Steak In Mushroom Sauce",
-      "qty": 126.0,
-      "revenue": 53640.0,
-      "avg_price": 425.71,
+      "name": "Grilled Chicken Steak In Red Wine Sauce",
+      "qty": 150.0,
+      "revenue": 56400.0,
+      "avg_price": 376.0,
       "category": "Steaks"
     }
   ],
@@ -1310,135 +1368,135 @@
     },
     {
       "name": "Tiramisu",
-      "qty": 374.0,
-      "revenue": 98680.0,
-      "avg_price": 263.85,
+      "qty": 401.0,
+      "revenue": 105700.0,
+      "avg_price": 263.59,
       "category": "Dessert"
     },
     {
       "name": "Dry Chilli Chicken",
-      "qty": 364.0,
-      "revenue": 101850.0,
-      "avg_price": 279.81,
+      "qty": 392.0,
+      "revenue": 110250.0,
+      "avg_price": 281.25,
       "category": "Small Eats"
     },
     {
       "name": "Fish Finger 6 Pcs Basa",
-      "qty": 288.0,
-      "revenue": 77280.0,
-      "avg_price": 268.33,
+      "qty": 315.0,
+      "revenue": 84840.0,
+      "avg_price": 269.33,
       "category": "Small Eats"
     },
     {
       "name": "Creme Brulee",
-      "qty": 286.0,
-      "revenue": 75050.0,
-      "avg_price": 262.41,
+      "qty": 301.0,
+      "revenue": 78950.0,
+      "avg_price": 262.29,
       "category": "Dessert"
     },
     {
       "name": "French Fries",
-      "qty": 266.0,
-      "revenue": 38190.0,
-      "avg_price": 143.57,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
-      "qty": 261.0,
-      "revenue": 69360.0,
-      "avg_price": 265.75,
+      "qty": 295.0,
+      "revenue": 42250.0,
+      "avg_price": 143.22,
       "category": "Small Eats"
     },
     {
       "name": "Cheese Garlic Bread",
-      "qty": 258.5,
-      "revenue": 43415.0,
-      "avg_price": 167.95,
+      "qty": 279.5,
+      "revenue": 46985.0,
+      "avg_price": 168.1,
       "category": "Toasted"
     },
     {
+      "name": "Chicken Wonton Served With Sweet Chilli Sauce (Steamed)",
+      "qty": 277.0,
+      "revenue": 73520.0,
+      "avg_price": 265.42,
+      "category": "Small Eats"
+    },
+    {
       "name": "Basa Fish N Chips",
-      "qty": 231.0,
-      "revenue": 75950.0,
-      "avg_price": 328.79,
+      "qty": 260.0,
+      "revenue": 85230.0,
+      "avg_price": 327.81,
       "category": "Big Eats"
     },
     {
       "name": "Grilled Chicken Steak In Mushroom Sauce",
-      "qty": 213.0,
-      "revenue": 80310.0,
-      "avg_price": 377.04,
+      "qty": 241.0,
+      "revenue": 91230.0,
+      "avg_price": 378.55,
       "category": "Steaks"
     },
     {
-      "name": "Chicken Satay With Peanut Butter Sauce",
-      "qty": 213.0,
-      "revenue": 60170.0,
-      "avg_price": 282.49,
-      "category": "Small Eats"
-    },
-    {
       "name": "Cream Of Chicken",
-      "qty": 212.0,
-      "revenue": 60200.0,
-      "avg_price": 283.96,
+      "qty": 230.0,
+      "revenue": 65240.0,
+      "avg_price": 283.65,
       "category": "Soup"
     },
     {
+      "name": "Chicken Satay With Peanut Butter Sauce",
+      "qty": 224.0,
+      "revenue": 63470.0,
+      "avg_price": 283.35,
+      "category": "Small Eats"
+    },
+    {
       "name": "Fish Finger 6 Pcs Bhetki",
-      "qty": 192.0,
-      "revenue": 84340.0,
-      "avg_price": 439.27,
+      "qty": 213.0,
+      "revenue": 93790.0,
+      "avg_price": 440.33,
       "category": "Small Eats"
     },
     {
       "name": "Grilled Bhetki In Lemon Butter Sauce",
-      "qty": 190.0,
-      "revenue": 104050.0,
-      "avg_price": 547.63,
+      "qty": 210.0,
+      "revenue": 115650.0,
+      "avg_price": 550.71,
       "category": "Big Eats"
     },
     {
       "name": "Bhetki Fish N Chips",
-      "qty": 187.0,
-      "revenue": 98150.0,
-      "avg_price": 524.87,
+      "qty": 204.0,
+      "revenue": 106990.0,
+      "avg_price": 524.46,
       "category": "Big Eats"
     },
     {
       "name": "Chilli Cheese Toast",
-      "qty": 184.0,
-      "revenue": 29180.0,
-      "avg_price": 158.59,
+      "qty": 199.0,
+      "revenue": 31730.0,
+      "avg_price": 159.45,
       "category": "Toasted"
     },
     {
-      "name": "Tempura Prawn Served With Assorted Dips",
-      "qty": 176.0,
-      "revenue": 61600.0,
-      "avg_price": 350.0,
+      "name": "Tempura Prawn",
+      "qty": 189.0,
+      "revenue": 71050.0,
+      "avg_price": 375.93,
+      "category": "Small Eats"
+    },
+    {
+      "name": "Peri Peri French Fries",
+      "qty": 184.0,
+      "revenue": 29250.0,
+      "avg_price": 158.97,
       "category": "Small Eats"
     },
     {
       "name": "Cake Of The Day",
-      "qty": 169.0,
-      "revenue": 42250.0,
+      "qty": 179.0,
+      "revenue": 44750.0,
       "avg_price": 250.0,
       "category": "Dessert"
     },
     {
       "name": "Chicken Cheese Ball",
-      "qty": 167.0,
-      "revenue": 54050.0,
-      "avg_price": 323.65,
-      "category": "Small Eats"
-    },
-    {
-      "name": "Tempura Prawn",
-      "qty": 163.0,
-      "revenue": 61690.0,
-      "avg_price": 378.47,
+      "qty": 178.0,
+      "revenue": 57680.0,
+      "avg_price": 324.04,
       "category": "Small Eats"
     }
   ],
@@ -1457,26 +1515,26 @@
     },
     {
       "slot": "08:00\u201312:00",
-      "revenue": 44660.0,
-      "orders": 40,
+      "revenue": 44933.0,
+      "orders": 41,
       "label": "08:00\u201312:00"
     },
     {
       "slot": "12:00\u201316:00",
-      "revenue": 1047138.0,
-      "orders": 1054,
+      "revenue": 1142055.0,
+      "orders": 1155,
       "label": "12:00\u201316:00"
     },
     {
       "slot": "16:00\u201320:00",
-      "revenue": 2080382.0,
-      "orders": 2689,
+      "revenue": 2276316.0,
+      "orders": 2947,
       "label": "16:00\u201320:00"
     },
     {
       "slot": "20:00\u201324:00",
-      "revenue": 3691417.0,
-      "orders": 3573,
+      "revenue": 4027872.0,
+      "orders": 3896,
       "label": "20:00\u201324:00"
     }
   ],
@@ -3453,6 +3511,207 @@
         {
           "name": "Darjeeling Tea 1St Flush",
           "count": 27
+        }
+      ]
+    },
+    "Mar 2026": {
+      "daily": [
+        {
+          "date": "2026-03-01",
+          "revenue": 10104.0,
+          "orders": 10
+        },
+        {
+          "date": "2026-03-02",
+          "revenue": 19117.0,
+          "orders": 16
+        },
+        {
+          "date": "2026-03-03",
+          "revenue": 12837.0,
+          "orders": 17
+        },
+        {
+          "date": "2026-03-04",
+          "revenue": 6152.0,
+          "orders": 11
+        },
+        {
+          "date": "2026-03-05",
+          "revenue": 8996.0,
+          "orders": 10
+        },
+        {
+          "date": "2026-03-06",
+          "revenue": 28229.0,
+          "orders": 26
+        },
+        {
+          "date": "2026-03-07",
+          "revenue": 23271.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-03-08",
+          "revenue": 25969.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-03-09",
+          "revenue": 9446.0,
+          "orders": 17
+        },
+        {
+          "date": "2026-03-10",
+          "revenue": 21739.0,
+          "orders": 26
+        },
+        {
+          "date": "2026-03-11",
+          "revenue": 15181.0,
+          "orders": 21
+        },
+        {
+          "date": "2026-03-12",
+          "revenue": 19439.0,
+          "orders": 24
+        },
+        {
+          "date": "2026-03-13",
+          "revenue": 23490.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-03-14",
+          "revenue": 31705.0,
+          "orders": 36
+        },
+        {
+          "date": "2026-03-15",
+          "revenue": 36865.0,
+          "orders": 36
+        },
+        {
+          "date": "2026-03-16",
+          "revenue": 9269.0,
+          "orders": 12
+        },
+        {
+          "date": "2026-03-17",
+          "revenue": 29660.0,
+          "orders": 25
+        },
+        {
+          "date": "2026-03-18",
+          "revenue": 17355.0,
+          "orders": 19
+        },
+        {
+          "date": "2026-03-19",
+          "revenue": 15798.0,
+          "orders": 20
+        },
+        {
+          "date": "2026-03-20",
+          "revenue": 30578.0,
+          "orders": 33
+        },
+        {
+          "date": "2026-03-21",
+          "revenue": 29208.0,
+          "orders": 29
+        },
+        {
+          "date": "2026-03-22",
+          "revenue": 39903.0,
+          "orders": 32
+        },
+        {
+          "date": "2026-03-23",
+          "revenue": 23960.0,
+          "orders": 23
+        },
+        {
+          "date": "2026-03-24",
+          "revenue": 13905.0,
+          "orders": 17
+        },
+        {
+          "date": "2026-03-25",
+          "revenue": 17794.0,
+          "orders": 20
+        },
+        {
+          "date": "2026-03-26",
+          "revenue": 16194.0,
+          "orders": 27
+        },
+        {
+          "date": "2026-03-27",
+          "revenue": 26793.0,
+          "orders": 27
+        },
+        {
+          "date": "2026-03-28",
+          "revenue": 19611.0,
+          "orders": 28
+        },
+        {
+          "date": "2026-03-29",
+          "revenue": 23961.0,
+          "orders": 22
+        },
+        {
+          "date": "2026-03-30",
+          "revenue": 12492.0,
+          "orders": 16
+        },
+        {
+          "date": "2026-03-31",
+          "revenue": 8558.0,
+          "orders": 15
+        }
+      ],
+      "top_items": [
+        {
+          "name": "Cappuccino",
+          "count": 80
+        },
+        {
+          "name": "Americano (Standard)",
+          "count": 72
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 1st Flush",
+          "count": 48
+        },
+        {
+          "name": "NSA STG Tea Darjeeling Tea 2nd Flush",
+          "count": 31
+        },
+        {
+          "name": "Cafe Frappe",
+          "count": 31
+        },
+        {
+          "name": "Fresh Lime Soda",
+          "count": 30
+        },
+        {
+          "name": "French Fries",
+          "count": 27
+        },
+        {
+          "name": "Grilled Chicken Steak In Mushroom Sauce",
+          "count": 25
+        },
+        {
+          "name": "Dry Chilli Chicken",
+          "count": 25
+        },
+        {
+          "name": "Tempura Prawn",
+          "count": 25
         }
       ]
     }
